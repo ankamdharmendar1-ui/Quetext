@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Summarizer | Condense Any Text Instantly | VeriWrite</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span>VeriWrite</span>
+            </a>
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Tools <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></a>
+                        <div class="dropdown-content">
+                            <a href="index.html">Plagiarism Checker</a>
+                            <a href="ai-detector.html">AI Detector</a>
+                            <a href="humanizer.html">AI Humanizer</a>
+                            <a href="summarizer.html">AI Summarizer</a>
+                            <a href="citation.html">Citation Generator</a>
+                        </div>
+                    </li>
+                    <li><a href="index.html#features">Features</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="#tools" class="btn btn-primary">Start Summarizing</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>AI Summarizer</h1>
+                <p>Transform long documents and articles into concise, actionable summaries in seconds.</p>
+                
+                <div class="tool-box" id="tools">
+                    <div class="tool-tabs">
+                        <div class="tool-tab active" data-tool="summarize">Summarizer</div>
+                        <div class="tool-tab" data-tool="humanize">AI Humanizer</div>
+                    </div>
+                    <div class="text-area-wrapper">
+                        <textarea id="textInput" placeholder="Paste long text, articles, or essays here to summarize..."></textarea>
+                    </div>
+                    <div class="textarea-footer">
+                        <div style="display:flex; gap:12px; align-items:center;">
+                            <label style="font-size:0.9rem; color:var(--text-secondary)">Length:</label>
+                            <select id="summaryLength" style="padding:6px; border-radius:4px; border:1px solid #ddd;">
+                                <option>Short</option>
+                                <option selected>Moderate</option>
+                                <option>Long</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary" id="scanBtn" style="background-color: var(--primary-color)">Summarize Now</button>
+                    </div>
+                    <div id="progressContainer" style="display:none; position:absolute; bottom:0; left:0; width:100%; height:4px; background:#eee;">
+                        <div id="progressBar" style="width:0%; height:100%; background:var(--primary-color); transition: width 0.3s;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Save hours of reading</h2>
+                    <p>Get the key points from any text without losing the important context.</p>
+                </div>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="21" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="3" y2="18"></line></svg>
+                        </div>
+                        <h3>Key Point Extraction</h3>
+                        <p>Our AI identifies the most critical information and presents it in a logical, easy-to-read format.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                        </div>
+                        <h3>Multiple Output Styles</h3>
+                        <p>Choose between bullet points, paragraphs, or executive summaries to fit your needs.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        </div>
+                        <h3>Instant Results</h3>
+                        <p>Summarize thousands of words in less than 5 seconds with our high-speed processing engine.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="background: var(--bg-secondary); padding: 40px 0; border-top: 1px solid #eee; text-align: center; color: var(--text-muted);">
+        <div class="container">&copy; 2026 VeriWrite. All rights reserved.</div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

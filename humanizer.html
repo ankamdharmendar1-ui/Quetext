@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Humanizer | Make AI Text Sound Human | VeriWrite</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span>VeriWrite</span>
+            </a>
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Tools <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></a>
+                        <div class="dropdown-content">
+                            <a href="index.html">Plagiarism Checker</a>
+                            <a href="ai-detector.html">AI Detector</a>
+                            <a href="humanizer.html">AI Humanizer</a>
+                            <a href="summarizer.html">AI Summarizer</a>
+                            <a href="citation.html">Citation Generator</a>
+                        </div>
+                    </li>
+                    <li><a href="index.html#features">Features</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="#tools" class="btn btn-primary">Humanize Text</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>AI Humanizer</h1>
+                <p>Bypass AI detectors and improve flow by transforming robotic AI output into natural, human-like writing.</p>
+                
+                <div class="tool-box" id="tools">
+                    <div class="tool-tabs">
+                        <div class="tool-tab active" data-tool="humanize">Humanizer</div>
+                        <div class="tool-tab" data-tool="paraphrase">Paraphraser</div>
+                    </div>
+                    <div class="text-area-wrapper">
+                        <textarea id="textInput" placeholder="Paste AI-generated text here to humanize..."></textarea>
+                    </div>
+                    <div class="textarea-footer">
+                        <div style="display:flex; gap:12px; align-items:center;">
+                            <label style="font-size:0.9rem; color:var(--text-secondary)">Tone:</label>
+                            <select style="padding:6px; border-radius:4px; border:1px solid #ddd;">
+                                <option>Natural</option>
+                                <option>Formal</option>
+                                <option>Casual</option>
+                                <option>Academic</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary" id="scanBtn" style="background-color: var(--color-grammar)">Humanize Now</button>
+                    </div>
+                    <div id="progressContainer" style="display:none; position:absolute; bottom:0; left:0; width:100%; height:4px; background:#eee;">
+                        <div id="progressBar" style="width:0%; height:100%; background:var(--color-grammar); transition: width 0.3s;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Professional Humanization</h2>
+                    <p>Our algorithms adjust tone, syntax, and vocabulary to create authentic writing.</p>
+                </div>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon" style="background: rgba(52, 199, 89, 0.1); color: var(--color-grammar)">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        </div>
+                        <h3>Authentic Tone</h3>
+                        <p>Adjust the "temperature" of your writing to match your specific voice or audience.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon" style="background: rgba(52, 199, 89, 0.1); color: var(--color-grammar)">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 3 21 3 21 8"></polyline><line x1="4" y1="20" x2="21" y2="3"></line><polyline points="21 16 21 21 16 21"></polyline><line x1="15" y1="15" x2="21" y2="21"></line><line x1="4" y1="4" x2="9" y2="9"></line></svg>
+                        </div>
+                        <h3>Bypass Detection</h3>
+                        <p>Tested against GPTZero, Originality.ai, and more to ensure your content stays private.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon" style="background: rgba(52, 199, 89, 0.1); color: var(--color-grammar)">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        </div>
+                        <h3>Privacy Standard</h3>
+                        <p>We never store your content. Once humanized, it's yours and yours alone.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="background: var(--bg-secondary); padding: 40px 0; text-align: center; color: var(--text-muted);">
+        <div class="container">&copy; 2026 VeriWrite.</div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

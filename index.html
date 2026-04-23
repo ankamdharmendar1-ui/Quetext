@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quetext.in | Plagiarism Checker</title>
+    <meta name="description" content="DeepSearch-style plagiarism checker with source mapping, score cards, and color highlights.">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-dot">Q</span>
+                <span>Quetext.in</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#tools">Plagiarism Checker</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#tools">Free Forever</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="#tools" class="btn btn-primary">Start Free</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Check plagiarism with DeepSearch-style analysis</h1>
+                <p>Get exact and semantic matches with source links, score categories, and color-coded highlights.</p>
+
+                <div class="tool-box" id="tools">
+                    <div class="tool-tabs">
+                        <button class="tool-tab active" data-tool="plagiarism">Plagiarism Checker</button>
+                        <button class="tool-tab" data-tool="ai">AI Detector</button>
+                        <button class="tool-tab" data-tool="grammar">Grammar</button>
+                    </div>
+
+                    <div class="workspace">
+                        <div class="editor-pane">
+                            <div class="text-area-wrapper">
+                                <textarea id="textInput" placeholder="Paste your text here to begin scanning..."></textarea>
+                                <div id="highlightedText" class="highlighted hidden"></div>
+                            </div>
+                            <div class="textarea-footer">
+                                <div class="word-count"><span id="words">0</span> / 2,500 words</div>
+                                <div class="footer-actions">
+                                    <input id="fileInput" type="file" accept=".txt,.pdf,.docx">
+                                    <button class="btn btn-outline" id="scanFileBtn">Scan File</button>
+                                    <button class="btn btn-outline" id="downloadReportBtn" disabled>Download Report</button>
+                                    <button class="btn btn-primary" id="scanBtn">Check for Plagiarism</button>
+                                </div>
+                            </div>
+                            <p id="statusMessage" class="status-message hidden"></p>
+                            <div id="progressContainer" class="progress-container hidden">
+                                <div id="progressBar"></div>
+                            </div>
+                        </div>
+
+                        <aside class="results-pane">
+                            <div class="score-card">
+                                <p>Overall Similarity</p>
+                                <h3><span id="overallScore">0</span>%</h3>
+                                <span id="riskBadge" class="risk low">Low</span>
+                            </div>
+                            <div class="sources-card">
+                                <h4>Top Sources</h4>
+                                <div id="sourceList" class="source-list">
+                                    <p class="empty-state">Run a scan to view matched sources.</p>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="features">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Built for high-confidence checks</h2>
+                    <p>Fingerprint matching + semantic analysis + source-level verification.</p>
+                </div>
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <h3>DeepSearch Technology</h3>
+                        <p>Phrase-level fingerprint generation and source retrieval from web results.</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Color Highlights</h3>
+                        <p>Red for high overlap, yellow for partial paraphrase similarity.</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Source Mapping</h3>
+                        <p>Sentence-level links to suspected source pages for fast review.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="logo">
+                    <span class="logo-dot">Q</span>
+                    <span>Quetext.in</span>
+                </a>
+                <p>Plagiarism detection interface inspired by modern SaaS writing tools.</p>
+            </div>
+            <div>
+                <h4>Tools</h4>
+                <ul>
+                    <li><a href="#">Plagiarism Checker</a></li>
+                    <li><a href="#">AI Detector</a></li>
+                    <li><a href="#">Citation Generator</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
