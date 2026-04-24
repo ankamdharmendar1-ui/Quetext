@@ -1,67 +1,70 @@
-const levelClass = {
-  high: "bg-red-200/80 ring-1 ring-red-300",
-  partial: "bg-yellow-200/80 ring-1 ring-yellow-300",
-  low: ""
-};
+import React from 'react';
 
-function findAllRanges(haystack, needle) {
-  if (!needle) return [];
-  const ranges = [];
-  let start = 0;
-  while (true) {
-    const idx = haystack.indexOf(needle, start);
-    if (idx === -1) break;
-    ranges.push([idx, idx + needle.length]);
-    start = idx + needle.length;
-  }
-  return ranges;
-}
-
-function mergeRanges(ranges) {
-  const sorted = [...ranges].sort((a, b) => a.start - b.start || b.end - a.end);
-  const out = [];
-  for (const r of sorted) {
-    const last = out[out.length - 1];
-    if (!last || r.start > last.end) out.push({ ...r });
-    else if (r.end > last.end) last.end = r.end;
-  }
-  return out;
-}
-
-export default function HighlightedText({ text, matches }) {
-  const annotated = [];
-  for (const m of matches || []) {
-    const ranges = findAllRanges(text, m.sentence);
-    for (const [start, end] of ranges) {
-      annotated.push({ start, end, level: m.level });
+function HighlightedText({ text, matches }) {
+  // Create an array to track which parts of the text are matches
+  const textParts = [];
+  let lastIndex = 0;
+  
+  // Sort matches by their starting index
+  const sortedMatches = [...matches].sort((a, b) => a.startIndex - b.startIndex);
+  
+  sortedMatches.forEach(match => {
+    // Add the text before the match
+    if (match.startIndex > lastIndex) {
+      textParts.push({
+        text: text.substring(lastIndex, match.startIndex),
+        isMatch: false
+      });
     }
+    
+    // Add the matched text
+    textParts.push({
+      text: text.substring(match.startIndex, match.endIndex),
+      isMatch: true,
+      source: match.source
+    });
+    
+    lastIndex = match.endIndex;
+  });
+  
+  // Add any remaining text after the last match
+  if (lastIndex < text.length) {
+    textParts.push({
+      text: text.substring(lastIndex),
+      isMatch: false
+    });
   }
-
-  const merged = mergeRanges(annotated);
-  if (merged.length === 0) {
-    return <div className="whitespace-pre-wrap rounded-xl border bg-white p-4 leading-7 text-slate-900">{text}</div>;
-  }
-
-  const parts = [];
-  let cursor = 0;
-  for (const r of merged) {
-    if (cursor < r.start) parts.push({ text: text.slice(cursor, r.start), level: "low" });
-    parts.push({ text: text.slice(r.start, r.end), level: r.level });
-    cursor = r.end;
-  }
-  if (cursor < text.length) parts.push({ text: text.slice(cursor), level: "low" });
-
+  
   return (
-    <div className="whitespace-pre-wrap rounded-xl border bg-white p-4 leading-7 text-slate-900">
-      {parts.map((p, idx) =>
-        p.level === "low" ? (
-          <span key={idx}>{p.text}</span>
-        ) : (
-          <mark key={idx} className={`rounded px-1 py-0.5 ${levelClass[p.level]}`}>
-            {p.text}
-          </mark>
-        )
-      )}
+    <div className="whitespace-pre-wrap leading-relaxed">
+      {textParts.map((part, index) => {
+        if (part.isMatch) {
+          return (
+            <span 
+              key={index} 
+              className="bg-red-100 text-red-800 relative group"
+            >
+              {part.text}
+              <div className="absolute bottom-full left-0 mb-2 hidden group-hover:block bg-white p-2 rounded shadow-lg border border-gray-200 z-10 min-w-[200px]">
+                <div className="text-xs text-gray-500 mb-1">Matched Source:</div>
+                <a 
+                  href={part.source} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline text-sm truncate block"
+                  title={part.source}
+                >
+                  {part.source}
+                </a>
+              </div>
+            </span>
+          );
+        } else {
+          return <span key={index}>{part.text}</span>;
+        }
+      })}
     </div>
   );
 }
+
+export default HighlightedText;
