@@ -68,6 +68,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.quetext.in/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://quetext.in/privacy</loc>
     <lastmod>2026-04-24</lastmod>
     <changefreq>yearly</changefreq>
