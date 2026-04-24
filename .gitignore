@@ -1,0 +1,40 @@
+# Dependency directories
+node_modules/
+__pycache__/
+.venv/
+
+# Environment variables
+.env
+.env.local
+
+# Build artifacts
+dist/
+build/
+out/
+
+# Log files
+*.log
+
+# System files
+.DS_Store
+
+# Editor files
+.vscode/
+.idea/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Python
+*.pyc
+*.pyo
+*.pyd
+
+# Docker
+docker-compose.override.yml
+
+# Misc
+*.bak
+*.tmp
