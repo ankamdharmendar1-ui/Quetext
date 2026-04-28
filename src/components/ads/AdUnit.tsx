@@ -10,13 +10,23 @@ interface AdUnitProps {
 
 export default function AdUnit({ slot, format = "auto", style }: AdUnitProps) {
   useEffect(() => {
-    try {
-      // @ts-ignore
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
-    } catch (err) {
-      console.error("Adsense error:", err);
-    }
-  }, []);
+    const timeout = setTimeout(() => {
+      try {
+        // @ts-ignore
+        const adsbygoogle = window.adsbygoogle || [];
+        if (adsbygoogle.length >= 0) {
+          adsbygoogle.push({});
+        }
+      } catch (err) {
+        // Only log real errors, ignore "already filled" errors which are common in dev
+        if (err instanceof Error && !err.message.includes("already have ads")) {
+          console.error("Adsense error:", err);
+        }
+      }
+    }, 100);
+
+    return () => clearTimeout(timeout);
+  }, [slot]); // Re-run if slot changes
 
   return (
     <div className="ad-container my-8 flex justify-center overflow-hidden">
