@@ -57,6 +57,18 @@ const NEW_INTERNSHIPS = [
     applyLink: "https://in.indeed.com/viewjob?jk=58ab09902d5e3c08&from=shareddesktop_copy",
     isRemote: false,
   },
+  {
+    title: "MERN Stack Developer Intern",
+    company: "TheSmartBridge Educational Services Pvt.Ltd.",
+    location: "Hyderabad",
+    stipend: "₹5,000 - ₹10,000/month",
+    duration: "not disclosed",
+    category: "Software",
+    description: "Work closely with senior developers to design and implement new features for our web-based application using MERN stack.",
+    eligibility: "Freshers are eligible",
+    applyLink: "mailto:Sireesha@thesmartbridge.com",
+    isRemote: false,
+  },
 ];
 
 const NEW_WFH_JOBS = [
