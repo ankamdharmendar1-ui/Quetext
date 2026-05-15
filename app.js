@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     async function runApiScan(text) {
-        const response = await fetch(`${API_BASE}/scan/text`, {
+        const response = await fetch(`${AI_SERVICE_BASE}/text`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
     async function runApiFileScan(file) {
         const formData = new FormData();
         formData.append("file", file);
-        const response = await fetch(`${API_BASE}/scan/file`, {
+        const response = await fetch(`${AI_SERVICE_BASE}/file`, {
             method: "POST",
             body: formData
         });
@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     async function downloadReport(scanId) {
-        const response = await fetch(`${API_BASE}/scan/report/${scanId}`);
+        const response = await fetch(`${AI_SERVICE_BASE}/report/${scanId}`);
         if (!response.ok) throw new Error("Unable to download report.");
         const blob = await response.blob();
         const url = URL.createObjectURL(blob);
@@ -167,12 +167,30 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    scanBtn.addEventListener("click", async () => {
-        if (activeTool !== "plagiarism") {
-            alert("Only Plagiarism Checker is active in this static version.");
-            return;
-        }
+    const API_BASE = "http://localhost:5000/api"; // Main Backend (Plagiarism, AI, Grammar)
+    const AI_SERVICE_BASE = "http://localhost:8000/scan"; // AI Service (DeepSearch)
 
+    async function runApiAiDetect(text) {
+        const response = await fetch(`${API_BASE}/ai-detect/detect`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ text })
+        });
+        if (!response.ok) throw new Error("AI Detection failed");
+        return response.json();
+    }
+
+    async function runApiGrammar(text) {
+        const response = await fetch(`${API_BASE}/grammar/check`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ text })
+        });
+        if (!response.ok) throw new Error("Grammar check failed");
+        return response.json();
+    }
+
+    scanBtn.addEventListener("click", async () => {
         const text = textInput.value.trim();
         if (!text) {
             setStatus("Please paste text to scan.", "error");
@@ -192,10 +210,24 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 250);
 
         try {
-            setStatus("Checking plagiarism across web sources...", "");
-            const data = await runApiScan(text);
-            applyScanResult(text, data);
-            setStatus(`Scan complete. Similarity score: ${data.score}% (${data.category}).`, "success");
+            if (activeTool === "plagiarism") {
+                setStatus("Checking plagiarism across web sources...", "");
+                const data = await runApiScan(text); // Uses AI_SERVICE_BASE
+                applyScanResult(text, data);
+                setStatus(`Scan complete. Similarity score: ${data.score}% (${data.category}).`, "success");
+            } else if (activeTool === "ai") {
+                setStatus("Analyzing text for AI-generated patterns...", "");
+                const data = await runApiAiDetect(text);
+                overallScore.textContent = data.ai_score || 0;
+                riskBadge.textContent = data.ai_score > 50 ? "High AI" : "Low AI";
+                riskBadge.className = `risk ${data.ai_score > 50 ? 'high' : 'low'}`;
+                setStatus(`AI Detection complete. AI Score: ${data.ai_score}%`, "success");
+            } else if (activeTool === "grammar") {
+                setStatus("Checking for grammatical improvements...", "");
+                const data = await runApiGrammar(text);
+                setStatus(`Grammar check complete. Found ${data.issues?.length || 0} improvements.`, "success");
+                // Additional logic to highlight grammar issues can be added here
+            }
         } catch (error) {
             setStatus(`Scan failed: ${error.message}`, "error");
         } finally {
