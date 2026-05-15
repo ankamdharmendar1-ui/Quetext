@@ -57,6 +57,39 @@ body {
     font-weight: 800;
 }
 
+.logo { 
+    display: flex; 
+    align-items: center; 
+    gap: 12px; 
+    font-size: 1.5rem; 
+    font-weight: 800; 
+    color: var(--text);
+    text-decoration: none;
+}
+
+.nav-container { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+nav ul { 
+    display: flex; 
+    gap: 32px; 
+    list-style: none;
+}
+
+nav ul li a { 
+    font-weight: 700; 
+    color: var(--text-muted); 
+    font-size: 0.95rem;
+    text-decoration: none;
+}
+
+nav ul li a:hover { color: var(--royal-blue); }
+
+.nav-actions { display: flex; align-items: center; gap: 20px; }
+
 /* Hero Section with Soft Lavender Background */
 .hero { 
     padding: 120px 0 80px; 
