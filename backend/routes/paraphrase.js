@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { paraphraseText } = require('../services/paraphraseService');
 
-router.post('/paraphrase', async (req, res) => {
+router.post('/rephrase', async (req, res) => {
   try {
     const { text, style } = req.body;
     if (!text) {

@@ -1,22 +1,21 @@
-const axios = require('axios');
-
 async function humanizeText(text) {
   try {
-    const response = await axios.post(
-      `${process.env.AI_SERVICE_URL}/humanize`,
-      { text },
-      {
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${process.env.OPENAI_API_KEY}`
-        }
-      }
-    );
+    if (!text || text.trim().length === 0) return "";
     
-    return response.data.humanized;
+    // Simple mock humanizer: 
+    // Add some conversational filler words or slightly restructure to make it look "human"
+    let humanized = text;
+    
+    if (text.length > 50) {
+      const fillers = ["Actually, ", "To be honest, ", "In my opinion, ", "I think "];
+      const randomFiller = fillers[Math.floor(Math.random() * fillers.length)];
+      humanized = randomFiller + humanized.charAt(0).toLowerCase() + humanized.slice(1);
+    }
+    
+    return humanized;
   } catch (error) {
-    console.error('AI humanization failed:', error.response?.data || error.message);
-    throw new Error('AI humanization failed');
+    console.error('AI humanization failed:', error);
+    return text; // Return original text on failure
   }
 }
 

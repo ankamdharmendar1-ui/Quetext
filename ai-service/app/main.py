@@ -4,6 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from .api.routes_auth import router as auth_router
 from .api.routes_billing import router as billing_router
 from .api.routes_scan import router as scan_router
+from .api.routes_ai import router as ai_router
 from .core.config import settings
 from .db.session import Base, engine
 
@@ -21,6 +22,7 @@ app.add_middleware(
 app.include_router(auth_router)
 app.include_router(scan_router)
 app.include_router(billing_router)
+app.include_router(ai_router)
 
 
 @app.get("/health")
