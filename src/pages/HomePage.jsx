@@ -43,8 +43,9 @@ export default function HomePage() {
         url="/"
       />
 
-      {/* ── Hero ─────────────────────────────────────── */}
-      <section className="relative py-16 md:py-28 text-center overflow-hidden rounded-2xl md:rounded-3xl my-4 md:my-8 hero-gradient">
+      <div className="flex flex-col">
+        {/* ── Hero ─────────────────────────────────────── */}
+        <section className="order-2 md:order-1 relative py-16 md:py-28 text-center overflow-hidden rounded-2xl md:rounded-3xl my-4 md:my-8 hero-gradient">
         {/* Floating orbs - hidden on mobile for performance */}
         <div className="orb w-96 h-96 bg-purple-600 top-[-100px] left-[-80px] hidden md:block" style={{animationDelay:'0s'}} />
         <div className="orb w-72 h-72 bg-blue-500  bottom-[-60px] right-[-60px] hidden md:block" style={{animationDelay:'2s'}} />
@@ -89,8 +90,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Tools Grid ───────────────────────────────── */}
-      <section className="py-10 md:py-20 section-appear">
+        {/* ── Tools Grid ───────────────────────────────── */}
+        <section className="order-1 md:order-2 py-10 md:py-20 section-appear">
         <div className="text-center mb-8 md:mb-14">
           <span className="text-indigo-600 font-semibold text-xs md:text-sm uppercase tracking-widest">Our Tools</span>
           <h2 className="text-3xl md:text-5xl font-black text-gray-900 mt-2 mb-2 md:mb-4">Everything You Need</h2>
@@ -137,6 +138,7 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+      </div>
 
       <div className="px-4">
         <AdPlacement slot={AD_SLOTS.homeMid} className="max-w-3xl mx-auto" />

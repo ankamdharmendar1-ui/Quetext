@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { checkGrammar } from '../lib/api';
 import TextEditor from '../components/TextEditor';
+import SEO from '../lib/seoHelper';
 
 const GrammarPage = () => {
   const [text, setText] = useState('');
