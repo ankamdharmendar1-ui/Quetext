@@ -27,9 +27,9 @@ export default function HomePage() {
   return (
     <div className="max-w-7xl mx-auto overflow-x-hidden">
       <SEO
-        title="Quetext.in - Free Plagiarism Checker, AI Detector & Writing Tools"
-        description="Quetext.in - The best free Plagiarism Checker and AI Content Detector. Improve your writing with our Grammar Checker, Paraphrasing Tool, Sentence Rewriter, and Word Counter."
-        keywords="quetext, quetext alternative, free plagiarism checker, AI content detector, chatgpt detector, grammar checker, paraphrasing tool, sentence rewriter, word counter, essay checker, check plagiarism online, ai writing tools"
+        title="Quetext – Free Plagiarism Checker, AI Detector & Writing Tools"
+        description="Quetext.in offers the best free plagiarism checker, AI content detector, grammar checker, paraphrasing tool, and word counter – all powered by Google AdSense and optimized for speed."
+        keywords="quetext, quetext alternative, free plagiarism checker, AI content detector, grammar checker, paraphrasing tool, sentence rewriter, word counter, essay checker"
         url="/"
       />
 
