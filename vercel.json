@@ -11,8 +11,7 @@
     {
       "source": "/:path*",
       "destination": "https://www.quetext.in/:path*",
-      "statusCode": 301,
-      "has": [{ "type": "host", "value": "quetext.in" }]
+      "statusCode": 301
     }
   ],
   "rewrites": [
