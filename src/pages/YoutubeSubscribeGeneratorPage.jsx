@@ -104,16 +104,16 @@ const YoutubeSubscribeGeneratorPage = () => {
   return (
     <div className="max-w-4xl mx-auto p-4 py-12">
       <Helmet>
-        <title>Free YouTube Subscribe Link Generator | Auto Subscribe Link 2024</title>
-        <meta name="description" content="Use our free YouTube subscribe link generator to create an auto-subscribe link instantly. Turn viewers into subscribers and grow your channel faster." />
-        <meta name="keywords" content="youtube subscribe link generator, free youtube subscriber generator, auto subscribe link generator, youtube subscribe link maker, youtube subscriber tool, get more youtube subscribers" />
+        <title>Free YouTube Subscribe Link Generator | Auto Subscribe Link Generator</title>
+        <meta name="description" content="Create a direct YouTube subscribe link with our free youtube subscribe link generator. Generate auto subscribe links instantly to boost your channel subscribers." />
+        <meta name="keywords" content="youtube subscribe link generator, free youtube subscriber generator, subscribe link generator, auto subscribe link generator, youtube subscriber generator" />
         <link rel="canonical" href="https://www.quetext.in/youtube-subscribe-link-generator" />
       </Helmet>
       
       <SEO
-        title="Free YouTube Subscribe Link Generator | Auto Subscribe Link"
-        description="Use our free YouTube subscribe link generator to create an auto-subscribe link instantly. Turn viewers into subscribers and grow your channel faster."
-        keywords="youtube subscribe link generator, free youtube subscriber generator, auto subscribe link generator, youtube subscribe link maker"
+        title="Free YouTube Subscribe Link Generator | Auto Subscribe Link Generator"
+        description="Create a direct YouTube subscribe link with our free youtube subscribe link generator. Generate auto subscribe links instantly to boost your channel subscribers."
+        keywords="youtube subscribe link generator, free youtube subscriber generator, subscribe link generator, auto subscribe link generator, youtube subscriber generator"
         url="/youtube-subscribe-link-generator"
         schema={schemaData}
       />
