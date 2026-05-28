@@ -82,6 +82,16 @@ const tools = [
     output: 'Auto-subscribe link',
     icon: '▶️',
     keywords: 'youtube subscribe link generator, auto subscribe link'
+  },
+  {
+    id: 'youtube-handle-generator',
+    name: 'YouTube Handle Generator',
+    description: 'Generate unique and catchy YouTube handles for your channel',
+    purpose: 'Find the perfect @name for your brand',
+    input: 'Name, Brand, or Keyword',
+    output: 'List of available handle ideas',
+    icon: '💡',
+    keywords: 'youtube handle generator, youtube name generator'
   }
 ];
 

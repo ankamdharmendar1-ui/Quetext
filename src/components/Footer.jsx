@@ -9,6 +9,7 @@ const toolLinks = [
   { to: '/paraphrasing-tool', label: 'Paraphrasing Tool' },
   { to: '/sentence-rewriter', label: 'Sentence Rewriter' },
   { to: '/word-counter', label: 'Word Counter' },
+  { to: '/youtube-handle-generator', label: 'YouTube Handle Generator' },
 ];
 
 const legalLinks = [
