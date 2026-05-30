@@ -64,7 +64,7 @@ const AboutPage = () => {
         <p className="mb-6">
           For support, partnerships, or privacy inquiries, email{' '}
           <a href={`mailto:${SUPPORT_EMAIL}`} className="text-blue-600 hover:underline">{SUPPORT_EMAIL}</a> or
-          visit our <Link to="/contact" className="text-blue-600 hover:underline">Contact page</Link>.
+          visit our <Link to="/contact" className="text-blue-600 hover:underline">Contact Us page</Link>.
         </p>
 
         <div className="mt-12 p-6 bg-blue-50 rounded-lg border border-blue-100">

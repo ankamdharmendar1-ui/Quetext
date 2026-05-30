@@ -96,7 +96,7 @@ const PrivacyPolicyPage = () => {
         <p className="mb-6">
           For questions about this Privacy Policy, email{' '}
           <a href={`mailto:${SUPPORT_EMAIL}`} className="text-blue-600 hover:underline">{SUPPORT_EMAIL}</a> or
-          visit our <Link to="/contact" className="text-blue-600 hover:underline">Contact page</Link>.
+          visit our <Link to="/contact" className="text-blue-600 hover:underline">Contact Us page</Link>.
         </p>
       </div>
     </div>

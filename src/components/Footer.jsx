@@ -14,7 +14,7 @@ const toolLinks = [
 
 const legalLinks = [
   { to: '/about', label: 'About Us' },
-  { to: '/contact', label: 'Contact' },
+  { to: '/contact', label: 'Contact Us' },
   { to: '/privacy-policy', label: 'Privacy Policy' },
   { to: '/terms', label: 'Terms of Service' },
   { to: '/disclaimer', label: 'Disclaimer' },

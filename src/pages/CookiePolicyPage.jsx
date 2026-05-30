@@ -60,7 +60,7 @@ export default function CookiePolicyPage() {
         <p className="mb-6">
           Questions about this policy? Email us at{' '}
           <a href={`mailto:${SUPPORT_EMAIL}`} className="text-blue-600 hover:underline">{SUPPORT_EMAIL}</a>{' '}
-          or visit our <Link to="/contact" className="text-blue-600 hover:underline">Contact page</Link>.
+          or visit our <Link to="/contact" className="text-blue-600 hover:underline">Contact Us page</Link>.
           See also our <Link to="/privacy-policy" className="text-blue-600 hover:underline">Privacy Policy</Link>.
         </p>
       </div>
