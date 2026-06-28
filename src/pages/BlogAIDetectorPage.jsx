@@ -1,5 +1,5 @@
 import React from 'react';
-import { SEO } from '../lib/seoHelper';
+import SEO from '../lib/seoHelper';
 import { Link } from 'react-router-dom';
 
 const BlogAIDetectorPage = () => (
