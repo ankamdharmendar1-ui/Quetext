@@ -31,6 +31,11 @@ const BlogAIDetectorPage = lazy(() => import('./pages/BlogAIDetectorPage'));
 const BlogGrammarPage = lazy(() => import('./pages/BlogGrammarPage'));
 const BlogParaphrasingPage = lazy(() => import('./pages/BlogParaphrasingPage'));
 const BlogWordCountPage = lazy(() => import('./pages/BlogWordCountPage'));
+// New blog pages
+const BlogContentCalendarPage = lazy(() => import('./pages/BlogContentCalendarPage'));
+const BlogKeywordResearchPage = lazy(() => import('./pages/BlogKeywordResearchPage'));
+const BlogMetaDescriptionPage = lazy(() => import('./pages/BlogMetaDescriptionPage'));
+const BlogEEATPage = lazy(() => import('./pages/BlogEEATPage'));
 
 
 const LEGAL_PATHS = new Set([
@@ -80,6 +85,11 @@ function AppContent() {
             <Route path="/blog/top-grammar-mistakes" element={<BlogGrammarPage />} />
             <Route path="/blog/art-of-paraphrasing" element={<BlogParaphrasingPage />} />
             <Route path="/blog/why-word-count-matters" element={<BlogWordCountPage />} />
+            {/* New blog routes */}
+            <Route path="/blog/content-calendar" element={<BlogContentCalendarPage />} />
+            <Route path="/blog/keyword-research" element={<BlogKeywordResearchPage />} />
+            <Route path="/blog/meta-description" element={<BlogMetaDescriptionPage />} />
+            <Route path="/blog/e-e-a-t-guide" element={<BlogEEATPage />} />
           </Routes>
         </Suspense>
       </div>
