@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import { Helmet } from 'react-helmet';
+import RelatedTools from '../components/RelatedTools';
 
 // Dictionaries for generator
 const dictionaries = {
@@ -182,6 +183,8 @@ const RobloxRpNamesPage = () => {
           ))}
         </div>
       </div>
+    
+      <RelatedTools currentPath="/roblox-rp-names" />
     </div>
   );
 };

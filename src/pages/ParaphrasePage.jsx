@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import TextEditor from '../components/TextEditor';
 import { paraphraseText } from '../lib/api';
 import SEO from '../lib/seoHelper';
+import RelatedTools from '../components/RelatedTools';
 
 const ParaphrasePage = () => {
   const [original, setOriginal] = useState('');
@@ -273,6 +274,8 @@ const ParaphrasePage = () => {
           </div>
         </section>
       </div>
+    
+      <RelatedTools currentPath="/paraphrasing-tool" />
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import SEO from '../lib/seoHelper';
 import TextEditor from '../components/TextEditor';
+import RelatedTools from '../components/RelatedTools';
 
 function countStats(text) {
   const trimmed = text.trim();
@@ -94,6 +95,8 @@ const WordCounterPage = () => {
           </div>
         </section>
       </div>
+    
+      <RelatedTools currentPath="/word-counter" />
     </div>
   );
 };

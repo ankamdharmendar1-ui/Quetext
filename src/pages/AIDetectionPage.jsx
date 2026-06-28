@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import TextEditor from '../components/TextEditor';
 import { detectAI } from '../lib/api';
 import SEO from '../lib/seoHelper';
+import RelatedTools from '../components/RelatedTools';
 
 // Structured data for Free AI Content Detector
 const schemaData = [
@@ -179,6 +180,8 @@ const AIDetectionPage = () => {
           </div>
         </section>
       </div>
+    
+      <RelatedTools currentPath="/ai-content-detector" />
     </div>
   );
 };

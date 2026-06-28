@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import SEO from '../lib/seoHelper';
 import { Helmet } from 'react-helmet';
+import RelatedTools from '../components/RelatedTools';
 
 // Structured data for YouTube Subscribe Link Generator
 const schemaData = [
@@ -259,6 +260,8 @@ const YoutubeSubscribeGeneratorPage = () => {
         </div>
       </div>
 
+    
+      <RelatedTools currentPath="/youtube-subscribe-link-generator" />
     </div>
   );
 };

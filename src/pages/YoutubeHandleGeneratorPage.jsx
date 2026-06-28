@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import SEO from '../lib/seoHelper';
 import { Helmet } from 'react-helmet';
+import RelatedTools from '../components/RelatedTools';
 
 // Structured data for YouTube Handle Generator
 const schemaData = [
@@ -233,6 +234,8 @@ const YoutubeHandleGeneratorPage = () => {
         </div>
       </div>
 
+    
+      <RelatedTools currentPath="/youtube-handle-generator" />
     </div>
   );
 };

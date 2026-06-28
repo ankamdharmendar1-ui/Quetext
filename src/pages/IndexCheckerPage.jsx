@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import SEO from '../lib/seoHelper';
+import RelatedTools from '../components/RelatedTools';
 
 // Structured data for Free Index Checker
 const schemaData = [
@@ -151,6 +152,8 @@ const handleCheck = async () => {
           </div>
         </div>
       </div>
+    
+      <RelatedTools currentPath="/index-checker" />
     </div>
   );
 };

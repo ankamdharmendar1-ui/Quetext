@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { checkGrammar } from '../lib/api';
 import TextEditor from '../components/TextEditor';
 import SEO from '../lib/seoHelper';
+import RelatedTools from '../components/RelatedTools';
 
 // Structured data for Free Grammar Checker
 const schemaData = [
@@ -175,6 +176,8 @@ const GrammarPage = () => {
           </div>
         </section>
       </div>
+    
+      <RelatedTools currentPath="/grammar-checker" />
     </div>
   );
 };

@@ -4,6 +4,7 @@ import HighlightedText from '../components/HighlightedText';
 import SourceList from '../components/SourceList';
 import { checkPlagiarism } from '../lib/api';
 import SEO from '../lib/seoHelper';
+import RelatedTools from '../components/RelatedTools';
 
 // Structured data for Free Plagiarism Checker
 const schemaData = [
@@ -175,6 +176,8 @@ const PlagiarismPage = () => {
           </div>
         </section>
       </div>
+    
+      <RelatedTools currentPath="/plagiarism-checker" />
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../lib/seoHelper';
 import TextEditor from '../components/TextEditor';
+import RelatedTools from '../components/RelatedTools';
 
 const SentenceRewriterPage = () => {
   const [text, setText] = useState('');
@@ -68,6 +69,8 @@ const SentenceRewriterPage = () => {
           </div>
         </section>
       </div>
+    
+      <RelatedTools currentPath="/sentence-rewriter" />
     </div>
   );
 };
