@@ -7,6 +7,7 @@ const navLinks = [
   { to: '/grammar-checker',     label: 'Grammar'    },
   { to: '/paraphrasing-tool',   label: 'Paraphrase' },
   { to: '/tools',               label: 'All Tools'  },
+  { to: '/blog',                label: 'Blog'       },
 ];
 
 export default function Navbar() {
