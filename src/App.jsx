@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import CookieConsent from './components/CookieConsent';
 import PageAds from './components/PageAds';
+import ContactStrip from './components/ContactStrip';
 import PageLoader from './components/PageLoader';
 
 import HomePage from './pages/HomePage';
@@ -94,6 +95,7 @@ function AppContent() {
         </Suspense>
       </div>
       {showBottomAd && <PageAds position="bottom" />}
+      <ContactStrip />
       <Footer />
       <CookieConsent />
     </div>
