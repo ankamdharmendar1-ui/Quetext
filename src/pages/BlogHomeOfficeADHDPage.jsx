@@ -6,11 +6,13 @@ export default function BlogHomeOfficeADHDPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12 md:py-20">
       <SEO
-        title="How to Set Up a Home Office for ADHD: A Practical Guide 2026 | Quetext"
+title="How to Set Up a Home Office for ADHD: A Practical Guide 2026 | Quetext"
         description="Working from home with ADHD is a different challenge. Here's how to design your home office setup to reduce distractions, boost focus, and actually get things done."
         keywords="home office for ADHD, ADHD workspace setup, ADHD productivity home office, work from home ADHD tips, ADHD friendly office 2026"
         url="/blog/home-office-setup-for-adhd"
-      />
+      datePublished="2026-06-30"
+      image="https://www.quetext.in/assets/og-image.jpg"
+    />
 
       <div className="mb-8">
         <Link to="/blog" className="text-indigo-600 hover:text-indigo-800 text-sm font-medium">← Back to Blog</Link>

@@ -6,11 +6,13 @@ export default function BlogAILocalBusinessIndiaPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12 md:py-20">
       <SEO
-        title="AI Tools for Local Businesses in India: Practical Guide 2026 | Quetext"
+title="AI Tools for Local Businesses in India: Practical Guide 2026 | Quetext"
         description="Running a small or local business in India? These are the AI tools that are actually making a difference for Indian SMBs in 2026 — affordable, practical, and proven."
         keywords="AI tools for local businesses India, AI for small business India, AI tools Indian SMB, best AI tools India 2026, AI for Indian entrepreneurs"
         url="/blog/ai-tools-for-local-businesses-india"
-      />
+      datePublished="2026-06-30"
+      image="https://www.quetext.in/assets/og-image.jpg"
+    />
 
       <div className="mb-8">
         <Link to="/blog" className="text-indigo-600 hover:text-indigo-800 text-sm font-medium">← Back to Blog</Link>

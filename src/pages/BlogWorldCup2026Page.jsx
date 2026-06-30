@@ -6,11 +6,13 @@ export default function BlogWorldCup2026Page() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12 md:py-20">
       <SEO
-        title="FIFA World Cup 2026: Everything You Need to Know | Quetext"
+title="FIFA World Cup 2026: Everything You Need to Know | Quetext"
         description="From host cities to dark horse teams, get the complete guide to FIFA World Cup 2026. Watch schedules, travel tips, and underrated teams you should be cheering for."
         keywords="FIFA World Cup 2026, World Cup teams, World Cup schedule, World Cup host cities, dark horse teams 2026"
         url="/blog/fifa-world-cup-2026-guide"
-      />
+      datePublished="2026-06-30"
+      image="https://www.quetext.in/assets/og-image.jpg"
+    />
 
       <div className="mb-8">
         <Link to="/blog" className="text-indigo-600 hover:text-indigo-800 text-sm font-medium">← Back to Blog</Link>

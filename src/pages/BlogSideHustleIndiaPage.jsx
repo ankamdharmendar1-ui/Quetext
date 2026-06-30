@@ -6,11 +6,13 @@ export default function BlogSideHustleIndiaPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12 md:py-20">
       <SEO
-        title="Best Side Hustles That Pay Daily in India 2026 | Quetext"
+title="Best Side Hustles That Pay Daily in India 2026 | Quetext"
         description="Looking for side income that pays every day, not every month? Here are the most practical side hustles in India for 2026 that actually deposit money in your account daily."
         keywords="side hustles India 2026, daily income side hustle India, earn money daily India, side income ideas India, best side hustle 2026"
         url="/blog/side-hustles-that-pay-daily-india-2026"
-      />
+      datePublished="2026-06-30"
+      image="https://www.quetext.in/assets/og-image.jpg"
+    />
 
       <div className="mb-8">
         <Link to="/blog" className="text-indigo-600 hover:text-indigo-800 text-sm font-medium">← Back to Blog</Link>

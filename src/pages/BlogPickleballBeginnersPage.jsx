@@ -6,11 +6,13 @@ export default function BlogPickleballBeginnersPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12 md:py-20">
       <SEO
-        title="Pickleball Rules for Complete Beginners: Start Playing in 10 Minutes | Quetext"
+title="Pickleball Rules for Complete Beginners: Start Playing in 10 Minutes | Quetext"
         description="Never played pickleball before? This is the clearest, most beginner-friendly guide to pickleball rules in 2026. Learn the basics and get on the court fast."
         keywords="pickleball rules beginners, how to play pickleball, pickleball basics 2026, pickleball for beginners, learn pickleball rules"
         url="/blog/pickleball-rules-for-beginners"
-      />
+      datePublished="2026-06-30"
+      image="https://www.quetext.in/assets/og-image.jpg"
+    />
 
       <div className="mb-8">
         <Link to="/blog" className="text-indigo-600 hover:text-indigo-800 text-sm font-medium">← Back to Blog</Link>

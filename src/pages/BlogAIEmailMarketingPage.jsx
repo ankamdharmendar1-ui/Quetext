@@ -6,11 +6,13 @@ export default function BlogAIEmailMarketingPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12 md:py-20">
       <SEO
-        title="AI Tools for Email Marketing Beginners: Complete Guide 2026 | Quetext"
+title="AI Tools for Email Marketing Beginners: Complete Guide 2026 | Quetext"
         description="New to email marketing? Discover which AI tools actually help beginners write better emails, automate sequences, and grow their list faster in 2026 — without the overwhelm."
         keywords="AI tools for email marketing, email marketing AI 2026, AI email writer, best AI for email marketing beginners, email automation AI tools"
         url="/blog/ai-tools-for-email-marketing"
-      />
+      datePublished="2026-06-30"
+      image="https://www.quetext.in/assets/og-image.jpg"
+    />
 
       <div className="mb-8">
         <Link to="/blog" className="text-indigo-600 hover:text-indigo-800 text-sm font-medium">← Back to Blog</Link>

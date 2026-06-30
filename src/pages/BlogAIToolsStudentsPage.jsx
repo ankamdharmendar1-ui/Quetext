@@ -6,11 +6,13 @@ export default function BlogAIToolsStudentsPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12 md:py-20">
       <SEO
-        title="Best AI Tools for Student Productivity in 2026 | Quetext"
+title="Best AI Tools for Student Productivity in 2026 | Quetext"
         description="Struggling to keep up with assignments, deadlines, and research? Here are the best AI tools students are actually using in 2026 to study smarter and save hours every week."
         keywords="AI tools for students, student productivity 2026, AI study tools, best AI for college students, student AI apps"
         url="/blog/ai-tools-for-students-2026"
-      />
+      datePublished="2026-06-30"
+      image="https://www.quetext.in/assets/og-image.jpg"
+    />
 
       <div className="mb-8">
         <Link to="/blog" className="text-indigo-600 hover:text-indigo-800 text-sm font-medium">← Back to Blog</Link>

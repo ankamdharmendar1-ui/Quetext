@@ -2,97 +2,58 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../lib/seoHelper';
 
-export default function BlogGrammarPage() {
-  return (
+const BlogGrammarPage = () => (
+  <>
+    <SEO
+title="10 Grammar Mistakes That Hurt Your Professional Image | Quetext"
+      description="These are the grammar errors that make readers cringe and editors reject work. Learn the 10 most common mistakes and exactly how to fix each one."
+      keywords="grammar mistakes, common grammar errors, professional writing grammar, grammar tips, grammar checker"
+      url="/blog/top-grammar-mistakes"
+      datePublished="2026-06-30"
+      image="https://www.quetext.in/assets/og-image.jpg"
+    />
     <div className="max-w-4xl mx-auto px-4 py-12 md:py-20">
-      <SEO
-        title="Top 10 Grammar Mistakes to Avoid in Professional Writing | Quetext"
-        description="Improve your professional writing by avoiding these 10 common grammar mistakes. We break down the fixes so you can write clear, concise, and error-free emails."
-        keywords="grammar mistakes, grammar checker, professional writing, commonly confused words, punctuation errors, fix grammar, plagiarism checker, paraphrasing tool, word counter"
-        url="/blog/top-grammar-mistakes"
-      />
-      
-      <div className="mb-8">
-        <Link to="/" className="text-indigo-600 hover:text-indigo-800 text-sm font-medium">← Back to Home</Link>
-      </div>
-
+      <Link to="/blog" className="text-indigo-600 hover:text-indigo-800 text-sm font-medium mb-4 inline-block">
+        ← Back to Blog
+      </Link>
       <article className="prose prose-indigo prose-lg max-w-none">
-        <h1 className="text-4xl md:text-5xl font-black text-gray-900 mb-6">10 Cringeworthy Grammar Mistakes That Ruin Your Professional Vibe</h1>
-        
-        <p className="text-xl text-gray-600 mb-10 border-l-4 border-indigo-500 pl-4">
-          Let's be real: nothing kills the authority of a great idea quite like a typo. Whether you're firing off a critical email to your boss, submitting a final paper, or publishing a blog post, sloppy grammar just makes you look, well, unprofessional. We've all been there. Here are the top 10 mistakes that slip through the cracks, and exactly how to fix them before you hit send.
-        </p>
-
-        <h2 className="text-2xl font-bold text-gray-800 mt-10 mb-4">1. Their, There, and They're</h2>
-        <p>This is arguably the most common mistake on the internet. It's an easy slip-up when you're typing fast, but it's a glaring red flag to your readers.</p>
-        <ul className="list-disc pl-6 mb-4">
-          <li><strong>Their:</strong> Shows ownership. <em>(It is their project.)</em></li>
-          <li><strong>There:</strong> Points to a place or idea. <em>(Put the files over there.)</em></li>
-          <li><strong>They're:</strong> Just a lazy way to say "they are." <em>(They're going to the meeting.)</em></li>
+        <h1 className="text-4xl md:text-5xl font-black text-gray-900 mb-6">10 Grammar Mistakes That Make You Look Unprofessional (And How to Fix Them)</h1>
+        <p>Even the most creative ideas can be undermined by sloppy grammar. In a world where content is king, a single typo can damage credibility, turn off readers, and raise red flags for editors or hiring managers. Below we break down ten of the most frequent grammar errors, explain why they matter, and give you concrete fixes you can apply immediately.</p>
+        <h2>1. Your vs. You’re (and It’s vs. Its)</h2>
+        <p><strong>Your</strong> is a possessive pronoun (e.g., "your strategy"); <strong>you’re</strong> is a contraction for "you are". Likewise, <strong>its</strong> is possessive, while <strong>it’s</strong> means "it is". The mistake often slips in because the contracted form sounds natural. The quick test: replace the word with "you are" or "it is" – if the sentence still makes sense, you need the contraction.</p>
+        <h2>2. Using Affect and Effect Incorrectly</h2>
+        <p><strong>Affect</strong> is a verb meaning "to influence"; <strong>effect</strong> is a noun meaning "result". Remember the mnemonic: <em>A</em>ffect <em>A</em>ction, <em>E</em>ffect <em>E</em>nd result. Example: "The new policy will affect employee morale" vs. "The effect of the new policy was noticeable".</p>
+        <h2>3. Run‑On Sentences</h2>
+        <p>A run‑on stitches two independent clauses together without proper punctuation. Fix them by using a period, semicolon, or a coordinating conjunction (for, and, nor, but, or, yet, so). Example: "She finished the report she sent it to the manager" → "She finished the report, and she sent it to the manager."</p>
+        <h2>4. Dangling Modifiers</h2>
+        <p>A dangling modifier is a descriptive phrase that doesn’t clearly refer to the intended noun. It creates confusion. Example: "While reviewing the manuscript, the coffee spilled" → "While reviewing the manuscript, I spilled the coffee." Always place the modifier next to the word it modifies.</p>
+        <h2>5. Passive Voice Overuse</h2>
+        <p>Passive voice can make sentences vague and longer. Active voice is clearer. Change "The report was written by the team" to "The team wrote the report". Use passive sparingly, mainly when the actor is unknown or irrelevant.</p>
+        <h2>6. Comma Splices</h2>
+        <p>A comma splice joins two independent clauses with just a comma. Fix it by using a period, semicolon, or adding a conjunction. Example: "The data is accurate, it needs verification" → "The data is accurate; it needs verification".</p>
+        <h2>7. Apostrophe Abuse</h2>
+        <p>Apostrophes show possession or form contractions. Do not use them for plurals. Correct: "The company's policy" (possessive) vs. "The companies' policies" (plural possessive). For plural nouns ending in s, place the apostrophe after the s.</p>
+        <h2>8. Subject‑Verb Agreement Errors</h2>
+        <p>The verb must agree in number with its subject. Be careful with collective nouns (team, group) and intervening phrases. Example: "The list of items are on the table" → "The list of items is on the table".</p>
+        <h2>9. Then vs. Than Confusion</h2>
+        <p><strong>Then</strong> relates to time; <strong>than</strong> is used for comparisons. Swap them when mismatched: "Better then yesterday" → "Better than yesterday".</p>
+        <h2>10. Ending Sentences with Prepositions (and When It Is OK)</h2>
+        <p>Traditional grammar advises avoiding preposition‑ending sentences, but modern usage accepts them when they sound natural. Example: "Where are you at?" can be improved to "Where are you?" However, in formal writing, re‑phrase when possible.</p>
+        <h2>How to Train Yourself to Write Better Grammar</h2>
+        <ul>
+          <li>Read aloud – awkward phrasing often reveals errors.</li>
+          <li>Use a grammar checker like Quetext’s free tool for a second opinion.</li>
+          <li>Maintain a personal list of recurring mistakes and review it weekly.</li>
+          <li>Study a style guide (Chicago Manual, AP) to internalise rules.</li>
         </ul>
-
-        <h2 className="text-2xl font-bold text-gray-800 mt-10 mb-4">2. Your vs. You're</h2>
-        <p>Similar to the above, confusing possession with a contraction is a classic stumble. If you're ever in doubt, just expand it to "you are" and see if the sentence still sounds right.</p>
-        <ul className="list-disc pl-6 mb-4">
-          <li><strong>Your:</strong> Shows ownership. <em>(Is this your report?)</em></li>
-          <li><strong>You're:</strong> Contraction of "you are." <em>(You're going to do great.)</em></li>
-        </ul>
-
-        <h2 className="text-2xl font-bold text-gray-800 mt-10 mb-4">3. Its vs. It's</h2>
-        <p>This one trips everyone up because usually, an apostrophe means someone owns something (like "John's car"). But "it" is the rebel of the English language.</p>
-        <ul className="list-disc pl-6 mb-4">
-          <li><strong>Its:</strong> Shows ownership. <em>(The company increased its profits.)</em></li>
-          <li><strong>It's:</strong> Contraction of "it is" or "it has." <em>(It's been a long day.)</em></li>
-        </ul>
-
-        <h2 className="text-2xl font-bold text-gray-800 mt-10 mb-4">4. Affect vs. Effect</h2>
-        <p>These two sound so similar when spoken, but mixing them up in writing is a big no-no.</p>
-        <ul className="list-disc pl-6 mb-4">
-          <li><strong>Affect:</strong> Almost always an action (verb). <em>(The weather will affect our plans.)</em></li>
-          <li><strong>Effect:</strong> The end result (noun). <em>(The new policy had a positive effect.)</em></li>
-        </ul>
-
-        <h2 className="text-2xl font-bold text-gray-800 mt-10 mb-4">5. Loose vs. Lose</h2>
-        <p>A simple typo that completely changes the meaning of your sentence. Don't be the person who writes "I'm going to loose my mind."</p>
-        <ul className="list-disc pl-6 mb-4">
-          <li><strong>Loose:</strong> Not tight. <em>(The knot is too loose.)</em></li>
-          <li><strong>Lose:</strong> To misplace or not win. <em>(Don't lose that file.)</em></li>
-        </ul>
-
-        <h2 className="text-2xl font-bold text-gray-800 mt-10 mb-4">6. The Dreaded Dangling Modifier</h2>
-        <p>A modifier needs to clearly point to a noun. When it doesn't, things get weird fast.</p>
-        <p><em>The Fail:</em> Walking down the street, the trees were beautiful. (Wait, the trees were walking?)</p>
-        <p><em>The Fix:</em> Walking down the street, I saw the beautiful trees.</p>
-        <p>(Pro tip: If your sentences are getting tangled, sometimes running them through a <Link to="/paraphrasing-tool" className="text-indigo-600 hover:underline">Paraphrasing Tool</Link> can help you untwist them.)</p>
-
-        <h2 className="text-2xl font-bold text-gray-800 mt-10 mb-4">7. Me vs. I</h2>
-        <p>People often try to sound smart and overcorrect by using "I" when they should use "me." The easiest trick? Just take the other person out of the sentence and see how it sounds.</p>
-        <p><em>The Fail:</em> The manager gave the project to Sarah and I.</p>
-        <p><em>The Fix:</em> The manager gave the project to Sarah and me. (Because you'd never say "gave the project to I.")</p>
-
-        <h2 className="text-2xl font-bold text-gray-800 mt-10 mb-4">8. Run-on Sentences and Comma Splices</h2>
-        <p>A comma splice is what happens when you try to glue two perfectly good sentences together with just a flimsy comma.</p>
-        <p><em>The Fail:</em> The report is due tomorrow, we need to finish it tonight.</p>
-        <p><em>The Fix:</em> The report is due tomorrow; we need to finish it tonight. OR just use a period. The report is due tomorrow. We need to finish it tonight.</p>
-
-        <h2 className="text-2xl font-bold text-gray-800 mt-10 mb-4">9. Subject-Verb Agreement</h2>
-        <p>The subject has to match the verb (singular with singular, plural with plural). This gets messy when extra words sneak in between them.</p>
-        <p><em>The Fail:</em> A box of chocolates are on the table. (The subject is the "box", not the "chocolates".)</p>
-        <p><em>The Fix:</em> A box of chocolates is on the table.</p>
-
-        <h2 className="text-2xl font-bold text-gray-800 mt-10 mb-4">10. Hiding Behind Passive Voice</h2>
-        <p>While not technically a grammar "error," overusing passive voice makes your writing sound weak, wordy, and vaguely robotic. (If you're worried about sounding like a robot, you might want to check out our <Link to="/ai-content-detector" className="text-indigo-600 hover:underline">AI Content Detector</Link> too).</p>
-        <p><em>Passive:</em> The meeting was scheduled by the assistant.</p>
-        <p><em>Active:</em> The assistant scheduled the meeting. (See? Much punchier.)</p>
-
         <div className="bg-indigo-50 border border-indigo-100 rounded-xl p-8 mt-12 text-center">
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">Don't let grammar slow you down.</h3>
-          <p className="text-gray-600 mb-6">Before you publish, always double-check your work. Use our <Link to="/grammar-checker" className="text-indigo-600 font-semibold hover:underline">Grammar Checker</Link> to catch mistakes, check your length with our <Link to="/word-counter" className="text-indigo-600 font-semibold hover:underline">Word Counter</Link>, and ensure originality with our <Link to="/plagiarism-checker" className="text-indigo-600 font-semibold hover:underline">Plagiarism Checker</Link>.</p>
-          <Link to="/grammar-checker" className="inline-block bg-indigo-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-indigo-700 transition">
-            Try Grammar Checker Free
-          </Link>
+          <p className="text-lg font-medium text-indigo-800">
+            Catch every grammar mistake before you publish with our free <Link to="/grammar-checker" className="text-indigo-600 hover:underline">Grammar Checker</Link>.
+          </p>
         </div>
       </article>
     </div>
-  );
-}
+  </>
+);
+
+export default BlogGrammarPage;

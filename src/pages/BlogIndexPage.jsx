@@ -182,6 +182,8 @@ export default function BlogIndexPage() {
         description="Read expert articles on writing better, using AI tools effectively, managing personal finance, and boosting productivity. Fresh insights updated regularly on Quetext Blog."
         keywords="quetext blog, writing tips, AI tools, plagiarism, grammar, productivity, personal finance India, health wellness"
         url="/blog"
+        datePublished="2026-06-30"
+        image="https://www.quetext.in/assets/og-image.jpg"
       />
 
       {/* Hero — hidden on mobile */}

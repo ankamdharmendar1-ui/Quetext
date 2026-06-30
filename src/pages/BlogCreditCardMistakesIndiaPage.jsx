@@ -6,11 +6,13 @@ export default function BlogCreditCardMistakesIndiaPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12 md:py-20">
       <SEO
-        title="Credit Card Mistakes Beginners Make in India (And How to Avoid Them) | Quetext"
+title="Credit Card Mistakes Beginners Make in India (And How to Avoid Them) | Quetext"
         description="Getting your first credit card in India? These are the costly mistakes most beginners make — and exactly how to avoid them to build your credit score and save money."
         keywords="credit card mistakes India, credit card tips India beginners, how to use credit card India, avoid credit card debt India, credit card beginners 2026"
         url="/blog/credit-card-mistakes-beginners-india"
-      />
+      datePublished="2026-06-30"
+      image="https://www.quetext.in/assets/og-image.jpg"
+    />
 
       <div className="mb-8">
         <Link to="/blog" className="text-indigo-600 hover:text-indigo-800 text-sm font-medium">← Back to Blog</Link>

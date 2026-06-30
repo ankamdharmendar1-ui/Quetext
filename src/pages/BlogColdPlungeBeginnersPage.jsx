@@ -6,11 +6,13 @@ export default function BlogColdPlungeBeginnersPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12 md:py-20">
       <SEO
-        title="Cold Plunge Benefits for Beginners: What Really Happens to Your Body | Quetext"
+title="Cold Plunge Benefits for Beginners: What Really Happens to Your Body | Quetext"
         description="Cold plunging is everywhere in 2026. But what does it actually do to your body? Here's the honest, science-backed guide for complete beginners before you jump in."
         keywords="cold plunge benefits beginners, cold water immersion benefits, how to start cold plunge, cold plunge for beginners 2026, ice bath benefits"
         url="/blog/cold-plunge-benefits-beginners"
-      />
+      datePublished="2026-06-30"
+      image="https://www.quetext.in/assets/og-image.jpg"
+    />
 
       <div className="mb-8">
         <Link to="/blog" className="text-indigo-600 hover:text-indigo-800 text-sm font-medium">← Back to Blog</Link>

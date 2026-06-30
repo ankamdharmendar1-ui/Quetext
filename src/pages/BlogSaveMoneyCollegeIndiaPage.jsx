@@ -6,11 +6,13 @@ export default function BlogSaveMoneyCollegeIndiaPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12 md:py-20">
       <SEO
-        title="How to Save Money as a College Student in India 2026 | Quetext"
+title="How to Save Money as a College Student in India 2026 | Quetext"
         description="Broke at the end of every month? This is the real, practical guide to saving money as a college student in India in 2026 — no fluff, just strategies that actually work."
         keywords="save money college student India, student budget India 2026, how to save money student India, college student finance tips India"
         url="/blog/how-to-save-money-college-student-india"
-      />
+      datePublished="2026-06-30"
+      image="https://www.quetext.in/assets/og-image.jpg"
+    />
 
       <div className="mb-8">
         <Link to="/blog" className="text-indigo-600 hover:text-indigo-800 text-sm font-medium">← Back to Blog</Link>
