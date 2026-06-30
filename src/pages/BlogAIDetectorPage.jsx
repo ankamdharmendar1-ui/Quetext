@@ -32,7 +32,7 @@ title="How AI Content Detectors Work: The Science Explained | Quetext"
         <h2>4. How Training Data Shapes Detection Models</h2>
         <p>Detectors are trained on large corpora of both human‑written and AI‑generated samples. The quality, diversity, and recency of that data affect accuracy. If a detector was trained before the release of a new model (e.g., GPT‑4.5), it may misclassify newer outputs.</p>
         <h2>5. Why AI Detectors Are Not Perfect</h2>
-        <p>False positives happen when a human writer mimics a formal, repetitive style. False negatives occur when AI is prompted to “write like a human” or when post‑editing adjusts the statistical signature. Additionally, short excerpts (< 100 words) lack enough data for reliable scoring.</p>
+        <p>False positives happen when a human writer mimics a formal, repetitive style. False negatives occur when AI is prompted to “write like a human” or when post‑editing adjusts the statistical signature. Additionally, short excerpts (&lt; 100 words) lack enough data for reliable scoring.</p>
         <h2>6. Can You Fool an AI Detector?</h2>
         <p>Yes, to an extent. Strategies include:
         <ul>
