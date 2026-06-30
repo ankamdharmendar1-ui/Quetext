@@ -184,8 +184,8 @@ export default function BlogIndexPage() {
         url="/blog"
       />
 
-      {/* Hero */}
-      <div className="bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 py-16 px-4">
+      {/* Hero — hidden on mobile */}
+      <div className="hidden md:block bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 bg-indigo-500/20 border border-indigo-400/30 text-indigo-300 text-sm font-medium px-4 py-2 rounded-full mb-6">
             <span className="w-2 h-2 bg-indigo-400 rounded-full"></span>
