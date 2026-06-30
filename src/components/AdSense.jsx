@@ -37,10 +37,16 @@ export default function AdSense({
       return undefined;
     }
 
+    let attempts = 0;
+    const maxAttempts = 50;
+
     const timer = window.setInterval(() => {
+      attempts++;
       if (window.adsbygoogle) {
         window.clearInterval(timer);
         pushAd();
+      } else if (attempts >= maxAttempts) {
+        window.clearInterval(timer);
       }
     }, 200);
 

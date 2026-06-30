@@ -20,7 +20,7 @@ export default function CookieConsent() {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-gray-900/95 backdrop-blur-sm text-white p-3 md:p-4 z-50 shadow-2xl border-t border-gray-700/50" role="dialog" aria-label="Cookie consent">
+    <div className="fixed bottom-0 left-0 right-0 bg-gray-900/95 text-white p-3 md:p-4 z-50 shadow-2xl border-t border-gray-700/50" role="dialog" aria-label="Cookie consent">
       <div className="container mx-auto px-2 md:px-4 max-w-6xl flex flex-col md:flex-row md:items-center md:justify-between gap-3 md:gap-4">
         <p className="text-xs md:text-sm text-gray-300 leading-relaxed md:leading-normal">
           {SITE_NAME} uses cookies to improve your experience, analyze traffic, and show relevant ads through{' '}
