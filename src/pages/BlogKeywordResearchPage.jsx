@@ -10,7 +10,7 @@ title="Keyword Research for Beginners: Find Keywords That Rank in 2026 | Quetext
       keywords="keyword research, keyword research for beginners, low competition keywords, how to find keywords, SEO keywords"
       url="/blog/keyword-research"
       datePublished="2026-06-30"
-      image="https://www.quetext.in/assets/og-image.jpg"
+
     />
     <div className="max-w-4xl mx-auto px-4 py-12 md:py-20">
       <Link to="/blog" className="text-indigo-600 hover:text-indigo-800 text-sm font-medium mb-4 inline-block">
@@ -43,7 +43,7 @@ title="Keyword Research for Beginners: Find Keywords That Rank in 2026 | Quetext
           <li><strong>Start with a seed topic.</strong> Choose a broad subject that matches your niche (e.g., "content calendar").</li>
           <li><strong>Generate ideas.</strong> Use the tools above to pull related queries, questions, and “people also ask” items.</li>
           <li><strong>Filter by intent.</strong> Decide if you want informational (how‑to), commercial (product review), or transactional (buy now) intent.</li>
-          <li><strong>Check volume and difficulty.</strong> Aim for 100‑1,000 monthly searches with difficulty < 30 (on a 0‑100 scale). Long‑tail phrases often meet this sweet spot.</li>
+          <li><strong>Check volume and difficulty.</strong> Aim for 100‑1,000 monthly searches with difficulty &lt; 30 (on a 0‑100 scale). Long‑tail phrases often meet this sweet spot.</li>
           <li><strong>Validate with SERP analysis.</strong> Google the keyword and examine the top 10 results: are they authority sites, or is there a gap you can fill?</li>
         </ol>
         <h2>6. Understanding Search Intent — The Most Underrated Concept in SEO</h2>

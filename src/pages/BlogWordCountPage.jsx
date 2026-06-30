@@ -10,7 +10,7 @@ title="Why Word Count Still Matters for SEO and Readers"
       keywords="word count SEO, blog length, content length, SEO best practices"
       url="/blog/word-count"
       datePublished="2026-06-30"
-      image="https://www.quetext.in/assets/og-image.jpg"
+
     />
     <div className="max-w-4xl mx-auto px-4 py-12 md:py-20">
       <Link to="/blog" className="text-indigo-600 hover:text-indigo-800 text-sm font-medium">
@@ -100,7 +100,7 @@ title="Why Word Count Still Matters for SEO and Readers"
           <li>Use short paragraphs (2‑4 lines) with plenty of white space.</li>
           <li>Employ bullet points and numbered lists for complex information.</li>
           <li>Leverage blockquotes for expert quotes.</li>
-          <li>Insert <code>​<strong></code> tags for emphasis, but sparingly.</li>
+          <li>Insert <code>&lt;strong&gt;</code> tags for emphasis, but sparingly.</li>
         </ul>
 
         <h2>6. Measuring Success After Expansion</h2>
@@ -108,8 +108,8 @@ title="Why Word Count Still Matters for SEO and Readers"
           Once you publish a longer version, monitor these metrics for a month:
         </p>
         <ul>
-          <li>Average time on page (goal: > 3 minutes for 1,000‑word articles).</li>
-          <li>Bounce rate (aim for < 50 %).</li>
+          <li>Average time on page (goal: &gt; 3 minutes for 1,000‑word articles).</li>
+          <li>Bounce rate (aim for &lt; 50 %).</li>
           <li>Organic keyword ranking improvements.</li>
           <li>Backlink acquisition – deep content often earns more natural links.</li>
         </ul>
@@ -136,7 +136,7 @@ title="Why Word Count Still Matters for SEO and Readers"
 
         <h2>8. Checklist Before Publishing</h2>
         <ul>
-          <li>Word count > 1,000.</li>
+          <li>Word count &gt; 1,000.</li>
           <li>All headings follow a logical hierarchy (H1 → H2 → H3).</li>
           <li>Images have descriptive alt‑text.</li>
           <li>Internal links to related articles.</li>
