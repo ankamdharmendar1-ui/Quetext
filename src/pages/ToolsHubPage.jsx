@@ -102,6 +102,46 @@ const tools = [
     output: '1000 Unique Names',
     icon: '🎮',
     keywords: 'roblox rp names, roblox roleplay names generator'
+  },
+  {
+    id: 'rent-split-calculator',
+    name: 'Rent Split Calculator With Rooms',
+    description: 'Split rent fairly by room size, utilities, and roommates',
+    purpose: 'Calculate fair rent shares for shared houses and apartments',
+    input: 'Rent, utilities, room sizes, people',
+    output: 'Room rent, utilities, total, and per-person cost',
+    icon: '🏠',
+    keywords: 'rent split calculator, roommate calculator, split rent by room'
+  },
+  {
+    id: 'bulk-youtube-video-downloader',
+    name: 'Bulk YouTube Video Downloader',
+    description: 'Validate and organize YouTube video links in bulk',
+    purpose: 'Prepare bulk video link lists for videos you own or can save',
+    input: 'YouTube URLs',
+    output: 'Clean video links and exportable bulk list',
+    icon: '📥',
+    keywords: 'bulk youtube video downloader, youtube video downloader'
+  },
+  {
+    id: 'bulk-thumbnail-downloader',
+    name: 'Bulk Thumbnail Downloader',
+    description: 'Download YouTube thumbnails from many videos at once',
+    purpose: 'Get thumbnail images from YouTube URLs or video IDs',
+    input: 'YouTube URLs or video IDs',
+    output: 'Thumbnail previews and download links',
+    icon: '🖼️',
+    keywords: 'bulk thumbnail downloader, youtube thumbnail downloader'
+  },
+  {
+    id: 'free-flash-video-downloader',
+    name: 'Free Flash Video Downloader',
+    description: 'Create download links for direct MP4, WEBM, MOV, M4V, and FLV files',
+    purpose: 'Save direct video files from URLs you are allowed to download',
+    input: 'Direct video file URLs',
+    output: 'Preview and download links',
+    icon: '🎞️',
+    keywords: 'free flash video downloader, flv downloader, direct video downloader'
   }
 ];
 

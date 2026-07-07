@@ -71,6 +71,34 @@ const ALL_TOOLS = [
     path: '/roblox-rp-names', 
     icon: '🎮', 
     description: 'Generate cool and unique names for your Roblox roleplays.' 
+  },
+  {
+    id: 'rent-split',
+    name: 'Rent Split Calculator',
+    path: '/rent-split-calculator',
+    icon: '🏠',
+    description: 'Split rent fairly by room size, utilities, and roommates.'
+  },
+  {
+    id: 'bulk-youtube-video',
+    name: 'Bulk YouTube Video Downloader',
+    path: '/bulk-youtube-video-downloader',
+    icon: '📥',
+    description: 'Validate and organize YouTube video links in bulk.'
+  },
+  {
+    id: 'bulk-thumbnail',
+    name: 'Bulk Thumbnail Downloader',
+    path: '/bulk-thumbnail-downloader',
+    icon: '🖼️',
+    description: 'Download thumbnails from many YouTube videos at once.'
+  },
+  {
+    id: 'flash-video',
+    name: 'Free Flash Video Downloader',
+    path: '/free-flash-video-downloader',
+    icon: '🎞️',
+    description: 'Create download links for direct video file URLs.'
   }
 ];
 

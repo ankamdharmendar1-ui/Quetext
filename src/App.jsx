@@ -28,6 +28,10 @@ const IndexCheckerPage = lazy(() => import('./pages/IndexCheckerPage'));
 const YoutubeSubscribeGeneratorPage = lazy(() => import('./pages/YoutubeSubscribeGeneratorPage'));
 const YoutubeHandleGeneratorPage = lazy(() => import('./pages/YoutubeHandleGeneratorPage'));
 const RobloxRpNamesPage = lazy(() => import('./pages/RobloxRpNamesPage'));
+const RentSplitCalculatorPage = lazy(() => import('./pages/RentSplitCalculatorPage'));
+const BulkYoutubeVideoDownloaderPage = lazy(() => import('./pages/BulkYoutubeVideoDownloaderPage'));
+const BulkThumbnailDownloaderPage = lazy(() => import('./pages/BulkThumbnailDownloaderPage'));
+const FlashVideoDownloaderPage = lazy(() => import('./pages/FlashVideoDownloaderPage'));
 
 // Blog pages
 const BlogIndexPage = lazy(() => import('./pages/BlogIndexPage'));
@@ -89,6 +93,10 @@ function AppContent() {
             <Route path="/youtube-subscribe-link-generator" element={<YoutubeSubscribeGeneratorPage />} />
             <Route path="/youtube-handle-generator" element={<YoutubeHandleGeneratorPage />} />
             <Route path="/roblox-rp-names" element={<RobloxRpNamesPage />} />
+            <Route path="/rent-split-calculator" element={<RentSplitCalculatorPage />} />
+            <Route path="/bulk-youtube-video-downloader" element={<BulkYoutubeVideoDownloaderPage />} />
+            <Route path="/bulk-thumbnail-downloader" element={<BulkThumbnailDownloaderPage />} />
+            <Route path="/free-flash-video-downloader" element={<FlashVideoDownloaderPage />} />
             <Route path="/plagiarism-checker" element={<PlagiarismPage />} />
             <Route path="/ai-content-detector" element={<AIDetectionPage />} />
             <Route path="/paraphrasing-tool" element={<ParaphrasePage />} />
