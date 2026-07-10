@@ -4,6 +4,16 @@ import SEO from '../lib/seoHelper';
 
 const allPosts = [
   {
+    slug: '/blog/how-to-convert-youtube-to-mp3-safely',
+    title: 'How to Convert YouTube to MP3 Safely in 2026 (Without Malware or Quality Loss)',
+    excerpt: 'A practical guide to picking a fast browser-based converter, choosing the right bitrate, staying on the right side of copyright, and avoiding fake download buttons.',
+    category: 'YouTube Tools',
+    categoryColor: 'bg-red-100 text-red-700',
+    date: 'July 10, 2026',
+    readTime: '8 min read',
+    emoji: '🎵',
+  },
+  {
     slug: '/blog/fifa-world-cup-2026-guide',
     title: 'FIFA World Cup 2026: The Complete Fan Guide Nobody Else Is Writing',
     excerpt: "From dark horse teams to host city travel tips, this is everything you actually need to know about the 2026 World Cup — stuff sports networks skip.",
@@ -166,7 +176,7 @@ const allPosts = [
   },
 ];
 
-const categories = ['All', 'AI Tools', 'Finance', 'Health', 'Sports', 'Productivity', 'Writing'];
+const categories = ['All', 'AI Tools', 'Finance', 'Health', 'Sports', 'Productivity', 'Writing', 'YouTube Tools'];
 
 export default function BlogIndexPage() {
   const [activeCategory, setActiveCategory] = useState('All');

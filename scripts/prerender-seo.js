@@ -148,6 +148,11 @@ const routes = {
     description: 'Grow your local business in India with the best AI tools for marketing, customer service, and operations in 2026.',
     keywords: 'AI tools local business India, AI for small business India, best AI tools India 2026, local business growth AI'
   },
+  '/blog/how-to-convert-youtube-to-mp3-safely': {
+    title: 'How to Convert YouTube to MP3 Safely in 2026 | Quetext.in',
+    description: 'A practical guide to converting YouTube videos to MP3 — quality settings, legal boundaries, malware risks, and how to pick a fast browser-based converter.',
+    keywords: 'youtube to mp3, convert youtube to mp3 safely, youtube mp3 converter 2026, yt2mp3 guide, download youtube audio'
+  },
 };
 
 if (!fs.existsSync(indexPath)) {

@@ -59,6 +59,7 @@ const BlogMagnesiumGlycVsCitPage = lazy(() => import('./pages/BlogMagnesiumGlycV
 const BlogPickleballBeginnersPage = lazy(() => import('./pages/BlogPickleballBeginnersPage'));
 const BlogCreditCardMistakesIndiaPage = lazy(() => import('./pages/BlogCreditCardMistakesIndiaPage'));
 const BlogAILocalBusinessIndiaPage = lazy(() => import('./pages/BlogAILocalBusinessIndiaPage'));
+const BlogYoutubeToMp3GuidePage = lazy(() => import('./pages/BlogYoutubeToMp3GuidePage'));
 
 const LEGAL_PATHS = new Set([
   '/privacy-policy',
@@ -133,6 +134,7 @@ function AppContent() {
             <Route path="/blog/pickleball-rules-for-beginners" element={<BlogPickleballBeginnersPage />} />
             <Route path="/blog/credit-card-mistakes-beginners-india" element={<BlogCreditCardMistakesIndiaPage />} />
             <Route path="/blog/ai-tools-for-local-businesses-india" element={<BlogAILocalBusinessIndiaPage />} />
+            <Route path="/blog/how-to-convert-youtube-to-mp3-safely" element={<BlogYoutubeToMp3GuidePage />} />
           </Routes>
         </Suspense>
       </div>
