@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 import SEO from '../lib/seoHelper';
 
 const tools = [
-  { id: 'plagiarism-checker',    name: 'Plagiarism Checker',    icon: '🔍', desc: 'Scan billions of sources and detect copied content instantly.',            color: 'from-violet-500 to-purple-600' },
-  { id: 'ai-content-detector',   name: 'AI Content Detector',   icon: '🤖', desc: 'Identify ChatGPT and AI-generated text with high accuracy.',               color: 'from-blue-500 to-cyan-500' },
-  { id: 'grammar-checker',       name: 'Grammar Checker',       icon: '✏️', desc: 'Fix grammatical errors and improve your writing quality effortlessly.',    color: 'from-emerald-500 to-teal-500' },
-  { id: 'paraphrasing-tool',     name: 'Paraphrasing Tool',     icon: '🔄', desc: 'Rephrase any text while preserving its original meaning perfectly.',       color: 'from-orange-500 to-amber-500' },
-  { id: 'sentence-rewriter',     name: 'Sentence Rewriter',     icon: '📝', desc: 'Rewrite sentences for better clarity and improved structure.',             color: 'from-pink-500 to-rose-500' },
-  { id: 'word-counter',          name: 'Word Counter',          icon: '🔢', desc: 'Instantly count words, characters, sentences, and reading time.',          color: 'from-indigo-500 to-blue-600' },
-  { id: 'index-checker',         name: 'Index Checker',         icon: '🔍', desc: 'Check instantly whether a URL is indexed by Google Search.',               color: 'from-blue-600 to-indigo-600' },
-  { id: 'youtube-subscribe-link-generator', name: 'YouTube Subscribe Link', icon: '▶️', desc: 'Generate an auto-subscribe link for your YouTube channel.',      color: 'from-red-500 to-red-700' },
+  { id: 'plagiarism-checker',    name: 'Plagiarism Checker',    icon: '🔍', desc: 'Scan billions of sources and detect copied content instantly.' },
+  { id: 'ai-content-detector',   name: 'AI Content Detector',   icon: '🤖', desc: 'Identify ChatGPT and AI-generated text with high accuracy.' },
+  { id: 'grammar-checker',       name: 'Grammar Checker',       icon: '✏️', desc: 'Fix grammatical errors and improve your writing quality effortlessly.' },
+  { id: 'paraphrasing-tool',     name: 'Paraphrasing Tool',     icon: '🔄', desc: 'Rephrase any text while preserving its original meaning perfectly.' },
+  { id: 'sentence-rewriter',     name: 'Sentence Rewriter',     icon: '📝', desc: 'Rewrite sentences for better clarity and improved structure.' },
+  { id: 'word-counter',          name: 'Word Counter',          icon: '🔢', desc: 'Instantly count words, characters, sentences, and reading time.' },
+  { id: 'index-checker',         name: 'Index Checker',         icon: '🔍', desc: 'Check instantly whether a URL is indexed by Google Search.' },
+  { id: 'youtube-subscribe-link-generator', name: 'YouTube Subscribe Link', icon: '▶️', desc: 'Generate an auto-subscribe link for your YouTube channel.' },
 ];
 
 const blogs = [
@@ -23,7 +23,7 @@ const blogs = [
 
 export default function HomePage() {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
+    <div className="gp-container py-12">
       <SEO
         title="Quetext – Free Plagiarism Checker & Writing Tools"
         description="Quetext.in offers the best free plagiarism checker, AI content detector, grammar checker, paraphrasing tool, and word counter – all optimized for speed."
@@ -32,50 +32,50 @@ export default function HomePage() {
       />
 
       {/* Hero */}
-      <section className="text-center mb-12">
-        <h1 className="text-4xl md:text-6xl font-black text-gray-900 mb-4">Write Smarter, Not Harder</h1>
-        <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-6">
+      <section className="text-center mb-16 mt-8">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">Write Smarter, Not Harder</h1>
+        <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
           Plagiarism checker, AI detector, grammar fixer, paraphraser — everything you need to create original, high-quality content.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link to="/plagiarism-checker" className="bg-indigo-600 text-white font-bold px-6 py-3 rounded-xl hover:bg-indigo-700 transition">
-            🔍 Check Plagiarism Free
+          <Link to="/plagiarism-checker" className="gp-btn">
+            Check Plagiarism Free
           </Link>
-          <Link to="/tools" className="border border-indigo-600 text-indigo-600 font-semibold px-6 py-3 rounded-xl hover:bg-indigo-50 transition">
-            View All Tools →
+          <Link to="/tools" className="inline-block px-5 py-2 border-2 border-blue-600 text-blue-600 font-semibold rounded hover:bg-blue-50 transition">
+            View All Tools
           </Link>
         </div>
       </section>
 
-      {/* Tools Grid – mobile friendly */}
-      <section className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      {/* Tools Grid */}
+      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-16">
         {tools.map((tool) => (
           <Link
             key={tool.id}
             to={`/${tool.id}`}
-            className="flex flex-col items-center text-center bg-white rounded-xl p-4 border border-gray-100 shadow-sm hover:shadow-md transition"
+            className="gp-card flex flex-col items-center text-center transition-transform hover:-translate-y-1"
           >
-            <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${tool.color} flex items-center justify-center text-xl mb-3`}>
+            <div className="w-12 h-12 rounded bg-blue-100 text-blue-600 flex items-center justify-center text-2xl mb-4">
               {tool.icon}
             </div>
-            <h3 className="text-sm font-bold text-gray-900 mb-1">{tool.name}</h3>
-            <span className="text-xs text-indigo-500 font-medium">Use →</span>
+            <h3 className="text-lg font-bold mb-2">{tool.name}</h3>
+            <span className="text-sm text-blue-600 font-medium mt-auto">Use Tool &rarr;</span>
           </Link>
         ))}
       </section>
 
       {/* Blog Section */}
-      <section className="mt-16">
-        <div className="text-center mb-8">
-          <h2 className="text-3xl font-black text-gray-900 mb-2">Latest From Our Blog</h2>
+      <section>
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-bold mb-3">Latest From Our Blog</h2>
           <p className="text-gray-600">Writing tips, guides, and tutorials to enhance your skills.</p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {blogs.map(blog => (
-            <Link key={blog.id} to={`/blog/${blog.id}`} className="block bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition p-6">
-              <span className="text-xs font-bold text-indigo-500 uppercase tracking-wider">{blog.date}</span>
-              <h3 className="text-xl font-bold text-gray-900 mt-2 mb-3">{blog.title}</h3>
-              <p className="text-gray-600 text-sm">{blog.desc}</p>
+            <Link key={blog.id} to={`/blog/${blog.id}`} className="gp-card flex flex-col transition-transform hover:-translate-y-1">
+              <span className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-2">{blog.date}</span>
+              <h3 className="text-xl font-bold mb-3">{blog.title}</h3>
+              <p className="text-gray-600 text-sm mt-auto">{blog.desc}</p>
             </Link>
           ))}
         </div>

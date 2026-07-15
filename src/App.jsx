@@ -82,7 +82,7 @@ function AppContent() {
   }, [pathname]);
 
   return (
-    <div className="flex flex-col min-h-screen bg-slate-50 w-full max-w-full">
+    <div className="flex flex-col min-h-screen w-full">
       <Navbar />
       <div className="pt-16"><PageAds position="top" /></div>
       <div className="flex-grow">

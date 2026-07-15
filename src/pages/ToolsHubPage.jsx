@@ -162,7 +162,7 @@ const ToolsHubPage = () => {
   const mostUsedTools = tools.slice(0, 3);
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="gp-container py-12">
       <Helmet>
         <title>Free Writing Tools | Quetext Alternative</title>
         <meta name="description" content="Access our complete suite of free writing tools including Plagiarism Checker, AI Content Detector, Grammar Checker, Paraphrasing Tool, Sentence Rewriter, and Word Counter. Rank higher with 100% original content." />
@@ -206,13 +206,13 @@ const ToolsHubPage = () => {
         <h2 className="text-2xl font-semibold mb-6 text-center">Most Used Tools</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {mostUsedTools.map(tool => (
-            <div key={tool.id} className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:border-blue-200 transition-all">
+            <div key={tool.id} className="gp-card">
               <div className="text-4xl mb-4 text-blue-600">{tool.icon}</div>
               <h3 className="text-xl font-bold mb-2">{tool.name}</h3>
               <p className="mb-4 text-gray-700">{tool.description}</p>
               <Link
                 to={`/${tool.id}`}
-                className="inline-block bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-5 py-2.5 rounded-lg hover:from-blue-600 hover:to-indigo-700 transition-colors"
+                className="gp-btn"
               >
                 Use Tool
               </Link>
@@ -229,7 +229,7 @@ const ToolsHubPage = () => {
             <Link
               key={tool.id}
               to={`/${tool.id}`}
-              className="block bg-white p-6 rounded-xl shadow-md border border-gray-100 hover:shadow-lg hover:border-blue-200 transition-all"
+              className="block gp-card hover:-translate-y-1 transition-transform"
             >
               <div className="flex items-start">
                 <div className="text-3xl mr-4 text-blue-500">{tool.icon}</div>
