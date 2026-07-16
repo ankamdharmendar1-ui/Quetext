@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../lib/seoHelper';
+import BlogFaqSection from '../components/BlogFaqSection';
+import { getBlogFaqSchema } from '../content/seo/blogFaqs';
 
 const BlogAIDetectorPage = () => (
   <>
@@ -11,6 +13,8 @@ title="How AI Content Detectors Work: The Science Explained | Quetext"
       url="/blog/how-ai-detectors-work"
       datePublished="2026-06-30"
       image="https://www.quetext.in/assets/og-image.jpg"
+      customSchema={[getBlogFaqSchema('how-ai-detectors-work')].filter(Boolean)}
+
     />
     <div className="max-w-4xl mx-auto px-4 py-12 md:py-20">
       <Link to="/blog" className="text-indigo-600 hover:text-indigo-800 text-sm font-medium mb-4 inline-block">
@@ -59,6 +63,7 @@ title="How AI Content Detectors Work: The Science Explained | Quetext"
             Check how your content scores with our free AI Content Detector before you submit or publish.
           </p>
         </div>
+        <BlogFaqSection slug="how-ai-detectors-work" />
       </article>
     </div>
   </>

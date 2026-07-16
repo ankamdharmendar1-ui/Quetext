@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { generateReport } from '../lib/api';
+import SEO from '../lib/seoHelper';
 
 const ReportPage = () => {
   const [title, setTitle] = useState('');
@@ -37,6 +38,12 @@ const ReportPage = () => {
 
   return (
     <div className="max-w-4xl mx-auto p-4">
+      <SEO
+        title="Generate Plagiarism & Writing Reports"
+        description="Generate detailed reports for your written content including plagiarism checks, grammar analysis, and readability scores."
+        keywords="writing report, plagiarism report, grammar analysis, text analysis report"
+        url="/reports"
+      />
       <h1 className="text-2xl font-bold mb-4">Report Generator</h1>
       
       <div className="grid grid-cols-1 gap-6">

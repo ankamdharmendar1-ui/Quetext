@@ -110,6 +110,30 @@
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://www.quetext.in/citation-generator</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.quetext.in/ai-humanizer</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.quetext.in/reports</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.quetext.in/summarizer</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
 
   <!-- New Ranking Blog Articles (June–July 2026) -->
   <url>

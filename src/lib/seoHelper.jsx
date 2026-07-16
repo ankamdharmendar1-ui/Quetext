@@ -25,8 +25,10 @@ const SEO = ({
   image,
   datePublished,
   authorName = SITE_NAME,
-  customSchema = []
+  customSchema = [],
+  schema,
 }) => {
+  const extraSchemas = customSchema?.length ? customSchema : (schema || []);
   // Build title ensuring brand name appears
   const fullTitle = title?.includes('Quetext') ? title : `${title || SITE_NAME}${DEFAULT_TITLE_SUFFIX}`;
   const fullDescription = description || `Free online writing tools by ${SITE_NAME}: plagiarism checker, AI detector, grammar checker, paraphrasing, and more.`;
@@ -113,7 +115,7 @@ const SEO = ({
   );
 
   // Assemble all schema blocks, filter out any null values
-  const schemaBlocks = [orgLd, breadcrumbLd, articleLd, ...customSchema].filter(Boolean);
+  const schemaBlocks = [orgLd, breadcrumbLd, articleLd, ...extraSchemas].filter(Boolean);
 
   return (
     <Helmet>

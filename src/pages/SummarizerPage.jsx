@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { summarizeText } from '../lib/api';
 import TextEditor from '../components/TextEditor';
+import SEO from '../lib/seoHelper';
 
 const SummarizerPage = () => {
   const [text, setText] = useState('');
@@ -29,6 +30,12 @@ const SummarizerPage = () => {
 
   return (
     <div className="max-w-4xl mx-auto p-4">
+      <SEO
+        title="Free AI Text Summarizer | Summarize Articles & Documents"
+        description="Quickly summarize long articles, documents, and text with our AI-powered Summarizer Tool. Extract key points and save time reading."
+        keywords="text summarizer, article summarizer, summarize text, summarize tool, ai summary generator"
+        url="/summarizer"
+      />
       <h1 className="text-2xl font-bold mb-4">Text Summarizer</h1>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../lib/seoHelper';
+import BlogFaqSection from '../components/BlogFaqSection';
+import { getBlogFaqSchema } from '../content/seo/blogFaqs';
 
 const BlogKeywordResearchPage = () => (
   <>
@@ -10,6 +12,9 @@ title="Keyword Research for Beginners: Find Keywords That Rank in 2026 | Quetext
       keywords="keyword research, keyword research for beginners, low competition keywords, how to find keywords, SEO keywords"
       url="/blog/keyword-research"
       datePublished="2026-06-30"
+
+      customSchema={[getBlogFaqSchema('keyword-research')].filter(Boolean)}
+
 
     />
     <div className="max-w-4xl mx-auto px-4 py-12 md:py-20">
@@ -72,6 +77,7 @@ title="Keyword Research for Beginners: Find Keywords That Rank in 2026 | Quetext
             Once you write your keyword‑optimized article, make sure it is plagiarism‑free with our <Link to="/plagiarism-checker" className="text-indigo-600 hover:underline">free Plagiarism Checker</Link>.
           </p>
         </div>
+        <BlogFaqSection slug="keyword-research" />
       </article>
     </div>
   </>

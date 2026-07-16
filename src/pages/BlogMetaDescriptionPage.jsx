@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../lib/seoHelper';
+import BlogFaqSection from '../components/BlogFaqSection';
+import { getBlogFaqSchema } from '../content/seo/blogFaqs';
 
 const BlogMetaDescriptionPage = () => (
   <>
@@ -11,6 +13,8 @@ title="How to Write a Perfect Meta Description in 2026 | Quetext"
       url="/blog/meta-description"
       datePublished="2026-06-30"
       image="https://www.quetext.in/assets/og-image.jpg"
+      customSchema={[getBlogFaqSchema('meta-description')].filter(Boolean)}
+
     />
     <div className="max-w-4xl mx-auto px-4 py-12 md:py-20">
       <Link to="/blog" className="text-indigo-600 hover:text-indigo-800 text-sm font-medium mb-4 inline-block">
@@ -76,6 +80,7 @@ title="How to Write a Perfect Meta Description in 2026 | Quetext"
             Your meta description is your first impression. Run it through our <Link to="/grammar-checker" className="text-indigo-600 hover:underline">Grammar Checker</Link> to make sure it is flawless.
           </p>
         </div>
+        <BlogFaqSection slug="meta-description" />
       </article>
     </div>
   </>

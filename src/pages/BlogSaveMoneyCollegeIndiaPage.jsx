@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../lib/seoHelper';
+import BlogFaqSection from '../components/BlogFaqSection';
+import { getBlogFaqSchema } from '../content/seo/blogFaqs';
 
 export default function BlogSaveMoneyCollegeIndiaPage() {
   return (
@@ -12,6 +14,8 @@ title="How to Save Money as a College Student in India 2026 | Quetext"
         url="/blog/how-to-save-money-college-student-india"
       datePublished="2026-06-30"
       image="https://www.quetext.in/assets/og-image.jpg"
+      customSchema={[getBlogFaqSchema('how-to-save-money-college-student-india')].filter(Boolean)}
+
     />
 
       <div className="mb-8">
@@ -111,6 +115,9 @@ title="How to Save Money as a College Student in India 2026 | Quetext"
             Check My Content Free →
           </Link>
         </div>
+
+        <BlogFaqSection slug="how-to-save-money-college-student-india" />
+
       </article>
     </div>
   );

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import TextEditor from '../components/TextEditor';
 import { generateCitation } from '../lib/api';
+import SEO from '../lib/seoHelper';
 
 const CitationPage = () => {
   const [text, setText] = useState('');
@@ -30,7 +31,13 @@ const CitationPage = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 max-w-4xl">
+      <SEO
+        title="Free Citation Generator | APA, MLA & Chicago"
+        description="Instantly generate perfect citations in APA, MLA, and Chicago styles. Fast, free, and accurate citation generator for students and researchers."
+        keywords="citation generator, apa citation generator, mla citation maker, free bibliography maker, chicago style citation"
+        url="/citation-generator"
+      />
       <h1 className="text-3xl font-bold mb-6">Citation Generator</h1>
       
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">

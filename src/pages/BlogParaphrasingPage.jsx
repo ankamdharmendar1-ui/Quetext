@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../lib/seoHelper';
+import BlogFaqSection from '../components/BlogFaqSection';
+import { getBlogFaqSchema } from '../content/seo/blogFaqs';
 
 const BlogParaphrasingPage = () => (
   <>
@@ -11,6 +13,8 @@ title="How to Paraphrase Correctly Without Plagiarizing | Quetext"
       url="/blog/art-of-paraphrasing"
       datePublished="2026-06-30"
       image="https://www.quetext.in/assets/og-image.jpg"
+      customSchema={[getBlogFaqSchema('art-of-paraphrasing')].filter(Boolean)}
+
     />
     <div className="max-w-4xl mx-auto px-4 py-12 md:py-20">
       <Link to="/blog" className="text-indigo-600 hover:text-indigo-800 text-sm font-medium mb-4 inline-block">
@@ -63,6 +67,7 @@ title="How to Paraphrase Correctly Without Plagiarizing | Quetext"
             Try our free <Link to="/paraphrasing-tool" className="text-indigo-600 hover:underline">Paraphrasing Tool</Link> and always verify with the <Link to="/plagiarism-checker" className="text-indigo-600 hover:underline">Plagiarism Checker</Link>.
           </p>
         </div>
+        <BlogFaqSection slug="art-of-paraphrasing" />
       </article>
     </div>
   </>

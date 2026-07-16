@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../lib/seoHelper';
+import BlogFaqSection from '../components/BlogFaqSection';
+import { getBlogFaqSchema } from '../content/seo/blogFaqs';
 
 const BlogGrammarPage = () => (
   <>
@@ -11,6 +13,8 @@ title="10 Grammar Mistakes That Hurt Your Professional Image | Quetext"
       url="/blog/top-grammar-mistakes"
       datePublished="2026-06-30"
       image="https://www.quetext.in/assets/og-image.jpg"
+      customSchema={[getBlogFaqSchema('top-grammar-mistakes')].filter(Boolean)}
+
     />
     <div className="max-w-4xl mx-auto px-4 py-12 md:py-20">
       <Link to="/blog" className="text-indigo-600 hover:text-indigo-800 text-sm font-medium mb-4 inline-block">
@@ -51,6 +55,7 @@ title="10 Grammar Mistakes That Hurt Your Professional Image | Quetext"
             Catch every grammar mistake before you publish with our free <Link to="/grammar-checker" className="text-indigo-600 hover:underline">Grammar Checker</Link>.
           </p>
         </div>
+        <BlogFaqSection slug="top-grammar-mistakes" />
       </article>
     </div>
   </>

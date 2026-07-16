@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../lib/seoHelper';
+import BlogFaqSection from '../components/BlogFaqSection';
+import { getBlogFaqSchema } from '../content/seo/blogFaqs';
 
 export default function BlogSideHustleIndiaPage() {
   return (
@@ -12,6 +14,8 @@ title="Best Side Hustles That Pay Daily in India 2026 | Quetext"
         url="/blog/side-hustles-that-pay-daily-india-2026"
       datePublished="2026-06-30"
       image="https://www.quetext.in/assets/og-image.jpg"
+      customSchema={[getBlogFaqSchema('side-hustles-that-pay-daily-india-2026')].filter(Boolean)}
+
     />
 
       <div className="mb-8">
@@ -106,6 +110,9 @@ title="Best Side Hustles That Pay Daily in India 2026 | Quetext"
             Check My Writing Free →
           </Link>
         </div>
+
+        <BlogFaqSection slug="side-hustles-that-pay-daily-india-2026" />
+
       </article>
     </div>
   );

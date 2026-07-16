@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../lib/seoHelper';
+import BlogFaqSection from '../components/BlogFaqSection';
+import { getBlogFaqSchema } from '../content/seo/blogFaqs';
 
 const BlogContentCalendarPage = () => (
   <>
@@ -11,6 +13,8 @@ title="How to Build a Content Calendar: Complete Guide for 2026 | Quetext"
       url="/blog/content-calendar"
       datePublished="2026-06-30"
       image="https://www.quetext.in/assets/og-image.jpg"
+      customSchema={[getBlogFaqSchema('content-calendar')].filter(Boolean)}
+
     />
     <div className="max-w-4xl mx-auto px-4 py-12 md:py-20">
       <Link to="/blog" className="text-indigo-600 hover:text-indigo-800 text-sm font-medium mb-4 inline-block">
@@ -44,6 +48,7 @@ title="How to Build a Content Calendar: Complete Guide for 2026 | Quetext"
             Before you publish, run your content through our free <Link to="/plagiarism-checker" className="text-indigo-600 hover:underline">Plagiarism Checker</Link> and <Link to="/grammar-checker" className="text-indigo-600 hover:underline">Grammar Checker</Link>.
           </p>
         </div>
+        <BlogFaqSection slug="content-calendar" />
       </article>
     </div>
   </>

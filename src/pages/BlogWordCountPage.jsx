@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../lib/seoHelper';
+import BlogFaqSection from '../components/BlogFaqSection';
+import { getBlogFaqSchema } from '../content/seo/blogFaqs';
 
 const BlogWordCountPage = () => (
   <>
@@ -10,6 +12,9 @@ title="Why Word Count Still Matters for SEO and Readers"
       keywords="word count SEO, blog length, content length, SEO best practices"
       url="/blog/word-count"
       datePublished="2026-06-30"
+
+      customSchema={[getBlogFaqSchema('why-word-count-matters')].filter(Boolean)}
+
 
     />
     <div className="max-w-4xl mx-auto px-4 py-12 md:py-20">
@@ -156,6 +161,7 @@ title="Why Word Count Still Matters for SEO and Readers"
           Ready to transform your thin posts into SEO‑powerhouses? Start with the guide above, apply
           the checklist, and watch your rankings climb.
         </p>
+        <BlogFaqSection slug="why-word-count-matters" />
       </article>
       <div className="bg-indigo-50 border border-indigo-100 rounded-xl p-8 mt-12 text-center">
         <p>

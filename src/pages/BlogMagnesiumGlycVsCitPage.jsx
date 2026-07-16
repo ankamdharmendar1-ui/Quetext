@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../lib/seoHelper';
+import BlogFaqSection from '../components/BlogFaqSection';
+import { getBlogFaqSchema } from '../content/seo/blogFaqs';
 
 export default function BlogMagnesiumGlycVsCitPage() {
   return (
@@ -12,6 +14,8 @@ title="Magnesium Glycinate vs Citrate: Which Should You Take? | Quetext"
         url="/blog/magnesium-glycinate-vs-citrate"
       datePublished="2026-06-30"
       image="https://www.quetext.in/assets/og-image.jpg"
+      customSchema={[getBlogFaqSchema('magnesium-glycinate-vs-citrate')].filter(Boolean)}
+
     />
 
       <div className="max-w-4xl mx-auto px-4 py-12 md:py-20">
@@ -208,6 +212,9 @@ title="Magnesium Glycinate vs Citrate: Which Should You Take? | Quetext"
               Try the Free Plagiarism Checker
             </Link>
           </div>
+
+          <BlogFaqSection slug="magnesium-glycinate-vs-citrate" />
+
         </article>
       </div>
     </>

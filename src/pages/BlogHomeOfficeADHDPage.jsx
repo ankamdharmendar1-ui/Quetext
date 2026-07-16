@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../lib/seoHelper';
+import BlogFaqSection from '../components/BlogFaqSection';
+import { getBlogFaqSchema } from '../content/seo/blogFaqs';
 
 export default function BlogHomeOfficeADHDPage() {
   return (
@@ -12,6 +14,8 @@ title="How to Set Up a Home Office for ADHD: A Practical Guide 2026 | Quetext"
         url="/blog/home-office-setup-for-adhd"
       datePublished="2026-06-30"
       image="https://www.quetext.in/assets/og-image.jpg"
+      customSchema={[getBlogFaqSchema('home-office-setup-for-adhd')].filter(Boolean)}
+
     />
 
       <div className="mb-8">
@@ -114,6 +118,9 @@ title="How to Set Up a Home Office for ADHD: A Practical Guide 2026 | Quetext"
             Check My Article Free →
           </Link>
         </div>
+
+        <BlogFaqSection slug="home-office-setup-for-adhd" />
+
       </article>
     </div>
   );

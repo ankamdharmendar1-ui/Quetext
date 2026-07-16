@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+import SEO from '../lib/seoHelper';
 
 const tools = [
   {
@@ -163,13 +163,13 @@ const ToolsHubPage = () => {
 
   return (
     <div className="gp-container py-12">
-      <Helmet>
-        <title>Free Writing Tools | Quetext Alternative</title>
-        <meta name="description" content="Access our complete suite of free writing tools including Plagiarism Checker, AI Content Detector, Grammar Checker, Paraphrasing Tool, Sentence Rewriter, and Word Counter. Rank higher with 100% original content." />
-        <meta name="keywords" content="quetext, quetext alternative, free writing tools, plagiarism checker, AI content detector, grammar checker, paraphrasing tool, sentence rewriter, word counter, essay checker" />
-        
-        <script type="application/ld+json">
-          {JSON.stringify({
+      <SEO
+        title="Free Writing Tools | Quetext Alternative"
+        description="Access our complete suite of free writing tools including Plagiarism Checker, AI Content Detector, Grammar Checker, Paraphrasing Tool, Sentence Rewriter, and Word Counter. Rank higher with 100% original content."
+        keywords="quetext, quetext alternative, free writing tools, plagiarism checker, AI content detector, grammar checker, paraphrasing tool, sentence rewriter, word counter, essay checker"
+        url="/tools"
+        customSchema={[
+          {
             "@context": "https://schema.org",
             "@type": "ItemList",
             "itemListElement": tools.map((tool, index) => ({
@@ -183,9 +183,9 @@ const ToolsHubPage = () => {
                 "applicationCategory": "WritingApplication"
               }
             }))
-          })}
-        </script>
-      </Helmet>
+          }
+        ]}
+      />
       
       <h1 className="text-3xl font-bold mb-6 text-center">Powerful Writing Tools</h1>
       <p className="text-center text-gray-600 mb-8">Enhance your writing with our AI-powered toolkit</p>

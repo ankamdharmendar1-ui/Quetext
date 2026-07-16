@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../lib/seoHelper';
+import BlogFaqSection from '../components/BlogFaqSection';
+import { getBlogFaqSchema } from '../content/seo/blogFaqs';
 
 export default function BlogAILocalBusinessIndiaPage() {
   return (
@@ -12,6 +14,8 @@ title="AI Tools for Local Businesses in India: Practical Guide 2026 | Quetext"
         url="/blog/ai-tools-for-local-businesses-india"
       datePublished="2026-06-30"
       image="https://www.quetext.in/assets/og-image.jpg"
+      customSchema={[getBlogFaqSchema('ai-tools-for-local-businesses-india')].filter(Boolean)}
+
     />
 
       <div className="mb-8">
@@ -114,6 +118,9 @@ title="AI Tools for Local Businesses in India: Practical Guide 2026 | Quetext"
             Explore All Free Tools →
           </Link>
         </div>
+
+        <BlogFaqSection slug="ai-tools-for-local-businesses-india" />
+
       </article>
     </div>
   );

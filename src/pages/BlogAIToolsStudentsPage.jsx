@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../lib/seoHelper';
+import BlogFaqSection from '../components/BlogFaqSection';
+import { getBlogFaqSchema } from '../content/seo/blogFaqs';
 
 export default function BlogAIToolsStudentsPage() {
   return (
@@ -12,6 +14,8 @@ title="Best AI Tools for Student Productivity in 2026 | Quetext"
         url="/blog/ai-tools-for-students-2026"
       datePublished="2026-06-30"
       image="https://www.quetext.in/assets/og-image.jpg"
+      customSchema={[getBlogFaqSchema('ai-tools-for-students-2026')].filter(Boolean)}
+
     />
 
       <div className="mb-8">
@@ -109,6 +113,9 @@ title="Best AI Tools for Student Productivity in 2026 | Quetext"
             Check My Assignment Free →
           </Link>
         </div>
+
+        <BlogFaqSection slug="ai-tools-for-students-2026" />
+
       </article>
     </div>
   );

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../lib/seoHelper';
+import BlogFaqSection from '../components/BlogFaqSection';
+import { getBlogFaqSchema } from '../content/seo/blogFaqs';
 
 export default function BlogWorldCup2026Page() {
   return (
@@ -12,6 +14,8 @@ title="FIFA World Cup 2026: Everything You Need to Know | Quetext"
         url="/blog/fifa-world-cup-2026-guide"
       datePublished="2026-06-30"
       image="https://www.quetext.in/assets/og-image.jpg"
+      customSchema={[getBlogFaqSchema('fifa-world-cup-2026-guide')].filter(Boolean)}
+
     />
 
       <div className="mb-8">
@@ -98,6 +102,9 @@ title="FIFA World Cup 2026: Everything You Need to Know | Quetext"
             Check My Content Free →
           </Link>
         </div>
+
+        <BlogFaqSection slug="fifa-world-cup-2026-guide" />
+
       </article>
     </div>
   );

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import HighlightedText from '../components/HighlightedText';
 import SourceList from '../components/SourceList';
+import SEO from '../lib/seoHelper';
 import Navbar from '../components/Navbar';
 
 function ResultsPage() {
@@ -24,6 +25,11 @@ function ResultsPage() {
   if (loading) {
     return (
       <div className="min-h-screen bg-gray-50">
+        <SEO
+          title="Plagiarism Report Results"
+          description="View your detailed plagiarism check results and analysis."
+          url="/results"
+        />
         <Navbar />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500 mx-auto"></div>

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../lib/seoHelper';
+import BlogFaqSection from '../components/BlogFaqSection';
+import { getBlogFaqSchema } from '../content/seo/blogFaqs';
 
 const YT2MP3_URL = 'https://yt2mp3fast.com/';
 const YT2MP3_FAQ_URL = 'https://yt2mp3fast.com/faq.html';
@@ -15,6 +17,8 @@ export default function BlogYoutubeToMp3GuidePage() {
         url="/blog/how-to-convert-youtube-to-mp3-safely"
         datePublished="2026-07-10"
         image="https://www.quetext.in/assets/og-image.jpg"
+        customSchema={[getBlogFaqSchema('how-to-convert-youtube-to-mp3-safely')].filter(Boolean)}
+
       />
 
       <div className="mb-8">
@@ -217,6 +221,9 @@ export default function BlogYoutubeToMp3GuidePage() {
             Explore Free Tools →
           </Link>
         </div>
+
+        <BlogFaqSection slug="how-to-convert-youtube-to-mp3-safely" />
+
       </article>
     </div>
   );

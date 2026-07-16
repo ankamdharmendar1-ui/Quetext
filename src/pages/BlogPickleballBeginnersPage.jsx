@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../lib/seoHelper';
+import BlogFaqSection from '../components/BlogFaqSection';
+import { getBlogFaqSchema } from '../content/seo/blogFaqs';
 
 export default function BlogPickleballBeginnersPage() {
   return (
@@ -12,6 +14,8 @@ title="Pickleball Rules for Complete Beginners: Start Playing in 10 Minutes | Qu
         url="/blog/pickleball-rules-for-beginners"
       datePublished="2026-06-30"
       image="https://www.quetext.in/assets/og-image.jpg"
+      customSchema={[getBlogFaqSchema('pickleball-rules-for-beginners')].filter(Boolean)}
+
     />
 
       <div className="mb-8">
@@ -108,6 +112,9 @@ title="Pickleball Rules for Complete Beginners: Start Playing in 10 Minutes | Qu
             Check My Content Free →
           </Link>
         </div>
+
+        <BlogFaqSection slug="pickleball-rules-for-beginners" />
+
       </article>
     </div>
   );

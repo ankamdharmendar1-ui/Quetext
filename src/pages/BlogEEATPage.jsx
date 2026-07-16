@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../lib/seoHelper';
+import BlogFaqSection from '../components/BlogFaqSection';
+import { getBlogFaqSchema } from '../content/seo/blogFaqs';
 
 const BlogEEATPage = () => (
   <>
@@ -11,6 +13,8 @@ title="Google E‑E‑A‑T Guide: What It Means for Your Website in 2026 | Quet
       url="/blog/e-e-a-t-guide"
       datePublished="2026-06-30"
       image="https://www.quetext.in/assets/og-image.jpg"
+      customSchema={[getBlogFaqSchema('e-e-a-t-guide')].filter(Boolean)}
+
     />
     <div className="max-w-4xl mx-auto px-4 py-12 md:py-20">
       <Link to="/blog" className="text-indigo-600 hover:text-indigo-800 text-sm font-medium mb-4 inline-block">
@@ -78,6 +82,7 @@ title="Google E‑E‑A‑T Guide: What It Means for Your Website in 2026 | Quet
             Original, human‑written content is central to strong E‑E‑A‑T. Use our <Link to="/plagiarism-checker" className="text-indigo-600 hover:underline">Plagiarism Checker</Link> and <Link to="/ai-content-detector" className="text-indigo-600 hover:underline">AI Detector</Link> to ensure your articles meet the highest standards.
           </p>
         </div>
+        <BlogFaqSection slug="e-e-a-t-guide" />
       </article>
     </div>
   </>

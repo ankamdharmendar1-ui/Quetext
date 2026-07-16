@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../lib/seoHelper';
+import BlogFaqSection from '../components/BlogFaqSection';
+import { getBlogFaqSchema } from '../content/seo/blogFaqs';
 
 export default function BlogCreditCardMistakesIndiaPage() {
   return (
@@ -12,6 +14,8 @@ title="Credit Card Mistakes Beginners Make in India (And How to Avoid Them) | Qu
         url="/blog/credit-card-mistakes-beginners-india"
       datePublished="2026-06-30"
       image="https://www.quetext.in/assets/og-image.jpg"
+      customSchema={[getBlogFaqSchema('credit-card-mistakes-beginners-india')].filter(Boolean)}
+
     />
 
       <div className="mb-8">
@@ -112,6 +116,9 @@ title="Credit Card Mistakes Beginners Make in India (And How to Avoid Them) | Qu
             Check My Article Free →
           </Link>
         </div>
+
+        <BlogFaqSection slug="credit-card-mistakes-beginners-india" />
+
       </article>
     </div>
   );
