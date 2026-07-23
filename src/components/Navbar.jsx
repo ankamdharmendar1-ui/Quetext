@@ -2,12 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const navLinks = [
-  { to: '/plagiarism-checker',  label: 'Plagiarism' },
-  { to: '/ai-content-detector', label: 'AI Detect'  },
-  { to: '/grammar-checker',     label: 'Grammar'    },
-  { to: '/paraphrasing-tool',   label: 'Paraphrase' },
-  { to: '/tools',               label: 'All Tools'  },
-  { to: '/blog',                label: 'Blog'       },
+  { to: '/', label: 'Home' },
+  { to: '/about', label: 'About' },
+  { to: '/contact', label: 'Contact Us' },
 ];
 
 export default function Navbar() {
@@ -49,9 +46,6 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-4">
             <Link to="/about" className="text-gray-600 hover:text-blue-600 text-sm font-medium transition-colors">About</Link>
             <Link to="/contact" className="text-gray-600 hover:text-blue-600 text-sm font-medium transition-colors">Contact Us</Link>
-            <Link to="/plagiarism-checker" className="gp-btn text-sm">
-              Try Free
-            </Link>
           </div>
 
           {/* Mobile Burger */}
@@ -84,11 +78,6 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Link to="/about"   className="block px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50">About</Link>
-          <Link to="/contact" className="block px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50">Contact Us</Link>
-          <Link to="/plagiarism-checker" className="block gp-btn text-center mt-4">
-            Try Free
-          </Link>
         </div>
       )}
     </nav>

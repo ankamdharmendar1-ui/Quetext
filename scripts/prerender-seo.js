@@ -12,31 +12,7 @@ const indexPath = path.join(distDir, 'index.html');
 const SITE_URL = 'https://www.quetext.in';
 
 const routes = {
-  '/youtube-handle-generator': {
-    title: 'Free YouTube Handle Generator - Free AI Tool | Quetext.in',
-    description: 'Generate unique and catchy YouTube handles for your channel with our free YouTube Handle Generator. Find the perfect @name for your brand.',
-    keywords: 'youtube handle generator, youtube name generator, youtube username generator, youtube handle ideas, youtube channel name generator, ai youtube handle generator'
-  },
-  '/rent-split-calculator': {
-    title: 'Rent Split Calculator With Rooms - Split Rent by Room Size | Quetext.in',
-    description: 'Free rent split calculator with rooms. Split rent by room size, utilities, private-room adjustments, and roommates in seconds.',
-    keywords: 'rent split calculator with rooms, split rent by room size, roommate rent calculator, room rent split calculator, fair rent calculator'
-  },
-  '/bulk-youtube-video-downloader': {
-    title: 'Bulk YouTube Video Downloader - Clean & Export Video Links | Quetext.in',
-    description: 'Free bulk YouTube video downloader utility. Validate, clean, deduplicate, and export YouTube video links for videos you own or can archive.',
-    keywords: 'bulk youtube video downloader, youtube bulk downloader, youtube video link organizer, youtube url extractor, batch youtube downloader'
-  },
-  '/bulk-thumbnail-downloader': {
-    title: 'Bulk YouTube Thumbnail Downloader - HD & Max Resolution | Quetext.in',
-    description: 'Free bulk YouTube thumbnail downloader. Paste video URLs, Shorts links, or IDs and download HD, max resolution, medium, or default thumbnails.',
-    keywords: 'bulk youtube thumbnail downloader, youtube thumbnail downloader, download youtube thumbnail, youtube thumbnail grabber, maxresdefault downloader'
-  },
-  '/free-flash-video-downloader': {
-    title: 'Free Flash Video Downloader - FLV, MP4, WEBM Direct Links | Quetext.in',
-    description: 'Free Flash video downloader for direct FLV, MP4, WEBM, MOV, and M4V links. Paste public video file URLs and create preview/download links.',
-    keywords: 'free flash video downloader, flv downloader, flash video downloader, mp4 video downloader, direct video downloader, webm downloader'
-  },
+  // Removed tool routes
 
   // ── Blog: Core tools ──────────────────────────────────────────────────────
   '/blog': {

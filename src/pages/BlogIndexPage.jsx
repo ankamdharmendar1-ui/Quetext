@@ -265,24 +265,6 @@ export default function BlogIndexPage() {
         </div>
       </div>
 
-      {/* Bottom CTA */}
-      <div className="bg-gradient-to-r from-indigo-600 to-purple-600 py-16 px-4 mt-10">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-black text-white mb-4">Ready to write better content?</h2>
-          <p className="text-indigo-100 mb-8">Use our free tools to check plagiarism, fix grammar, and detect AI content — all in one place.</p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/plagiarism-checker" className="bg-white text-indigo-600 font-semibold px-6 py-3 rounded-xl hover:bg-indigo-50 transition">
-              Plagiarism Checker
-            </Link>
-            <Link to="/grammar-checker" className="bg-indigo-500 text-white font-semibold px-6 py-3 rounded-xl hover:bg-indigo-400 transition border border-white/20">
-              Grammar Checker
-            </Link>
-            <Link to="/ai-content-detector" className="bg-indigo-500 text-white font-semibold px-6 py-3 rounded-xl hover:bg-indigo-400 transition border border-white/20">
-              AI Detector
-            </Link>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }

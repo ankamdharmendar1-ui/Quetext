@@ -10,31 +10,15 @@ import ContactStrip from './components/ContactStrip';
 import PageLoader from './components/PageLoader';
 
 // Main pages
-import HomePage from './pages/HomePage';
-const PlagiarismPage = lazy(() => import('./pages/PlagiarismPage'));
-const AIDetectionPage = lazy(() => import('./pages/AIDetectionPage'));
-const ParaphrasePage = lazy(() => import('./pages/ParaphrasePage'));
-const GrammarPage = lazy(() => import('./pages/GrammarPage'));
-const SentenceRewriterPage = lazy(() => import('./pages/SentenceRewriterPage'));
-const WordCounterPage = lazy(() => import('./pages/WordCounterPage'));
-const ToolsHubPage = lazy(() => import('./pages/ToolsHubPage'));
+const BlogIndexPage = lazy(() => import('./pages/BlogIndexPage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
 const PrivacyPolicyPage = lazy(() => import('./pages/PrivacyPolicyPage'));
 const TermsPage = lazy(() => import('./pages/TermsPage'));
 const DisclaimerPage = lazy(() => import('./pages/DisclaimerPage'));
 const CookiePolicyPage = lazy(() => import('./pages/CookiePolicyPage'));
-const IndexCheckerPage = lazy(() => import('./pages/IndexCheckerPage'));
-const YoutubeSubscribeGeneratorPage = lazy(() => import('./pages/YoutubeSubscribeGeneratorPage'));
-const YoutubeHandleGeneratorPage = lazy(() => import('./pages/YoutubeHandleGeneratorPage'));
-const RobloxRpNamesPage = lazy(() => import('./pages/RobloxRpNamesPage'));
-const RentSplitCalculatorPage = lazy(() => import('./pages/RentSplitCalculatorPage'));
-const BulkYoutubeVideoDownloaderPage = lazy(() => import('./pages/BulkYoutubeVideoDownloaderPage'));
-const BulkThumbnailDownloaderPage = lazy(() => import('./pages/BulkThumbnailDownloaderPage'));
-const FlashVideoDownloaderPage = lazy(() => import('./pages/FlashVideoDownloaderPage'));
 
 // Blog pages
-const BlogIndexPage = lazy(() => import('./pages/BlogIndexPage'));
 const BlogPlagiarismPage = lazy(() => import('./pages/BlogPlagiarismPage'));
 const BlogAIDetectorPage = lazy(() => import('./pages/BlogAIDetectorPage'));
 const BlogGrammarPage = lazy(() => import('./pages/BlogGrammarPage'));
@@ -88,40 +72,29 @@ function AppContent() {
       <div className="flex-grow">
         <Suspense fallback={<div className="flex items-center justify-center h-full"><PageLoader /></div>}>
           <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/tools" element={<ToolsHubPage />} />
-            <Route path="/index-checker" element={<IndexCheckerPage />} />
-            <Route path="/youtube-subscribe-link-generator" element={<YoutubeSubscribeGeneratorPage />} />
-            <Route path="/youtube-handle-generator" element={<YoutubeHandleGeneratorPage />} />
-            <Route path="/roblox-rp-names" element={<RobloxRpNamesPage />} />
-            <Route path="/rent-split-calculator" element={<RentSplitCalculatorPage />} />
-            <Route path="/bulk-youtube-video-downloader" element={<BulkYoutubeVideoDownloaderPage />} />
-            <Route path="/bulk-thumbnail-downloader" element={<BulkThumbnailDownloaderPage />} />
-            <Route path="/free-flash-video-downloader" element={<FlashVideoDownloaderPage />} />
-            <Route path="/plagiarism-checker" element={<PlagiarismPage />} />
-            <Route path="/ai-content-detector" element={<AIDetectionPage />} />
-            <Route path="/paraphrasing-tool" element={<ParaphrasePage />} />
-            <Route path="/grammar-checker" element={<GrammarPage />} />
-            <Route path="/sentence-rewriter" element={<SentenceRewriterPage />} />
-            <Route path="/word-counter" element={<WordCounterPage />} />
+            <Route path="/" element={<BlogIndexPage />} />
+            <Route path="/blog" element={<BlogIndexPage />} />
+            
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
             <Route path="/terms" element={<TermsPage />} />
             <Route path="/disclaimer" element={<DisclaimerPage />} />
             <Route path="/cookie-policy" element={<CookiePolicyPage />} />
+            
             {/* Blog routes */}
-            <Route path="/blog" element={<BlogIndexPage />} />
             <Route path="/blog/guide-to-avoiding-plagiarism" element={<BlogPlagiarismPage />} />
             <Route path="/blog/how-ai-detectors-work" element={<BlogAIDetectorPage />} />
             <Route path="/blog/top-grammar-mistakes" element={<BlogGrammarPage />} />
             <Route path="/blog/art-of-paraphrasing" element={<BlogParaphrasingPage />} />
             <Route path="/blog/why-word-count-matters" element={<BlogWordCountPage />} />
+            
             {/* SEO blog routes */}
             <Route path="/blog/content-calendar" element={<BlogContentCalendarPage />} />
             <Route path="/blog/keyword-research" element={<BlogKeywordResearchPage />} />
             <Route path="/blog/meta-description" element={<BlogMetaDescriptionPage />} />
             <Route path="/blog/e-e-a-t-guide" element={<BlogEEATPage />} />
+            
             {/* New ranking articles */}
             <Route path="/blog/fifa-world-cup-2026-guide" element={<BlogWorldCup2026Page />} />
             <Route path="/blog/ai-tools-for-students-2026" element={<BlogAIToolsStudentsPage />} />
