@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import CookieConsent from './components/CookieConsent';
+
 
 const BlogIndexPage = lazy(() => import('./pages/BlogIndexPage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
@@ -81,7 +81,6 @@ function AppContent() {
         </Suspense>
       </div>
       <Footer />
-      <CookieConsent />
     </div>
   );
 }
