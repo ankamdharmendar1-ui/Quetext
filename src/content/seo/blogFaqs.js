@@ -1,4 +1,4 @@
-import { buildFaqSchema } from '../../lib/faqSchema';
+
 
 export const blogFaqContent = {
   'guide-to-avoiding-plagiarism': {
