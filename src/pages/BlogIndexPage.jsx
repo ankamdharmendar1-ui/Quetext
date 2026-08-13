@@ -203,8 +203,8 @@ export default function BlogIndexPage() {
             <span className="w-2 h-2 bg-indigo-400 rounded-full"></span>
             Fresh Articles — Updated June 2026
           </div>
-          <h1 className="text-4xl md:text-6xl font-black text-white mb-4 leading-tight">
-            The Quetext <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">Blog</span>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-6">
+            Plagiarism <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">Checker</span>
           </h1>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             Practical guides on writing, AI tools, finance, health, and productivity.
